@@ -1159,7 +1159,7 @@ impl RustAlphaBetaEngine {
         &mut self,
         board: &Board,
         mut alpha: i32,
-        beta: i32,
+        mut beta: i32,
         ply: usize,
         repetition: &mut RepetitionTracker,
     ) -> Option<i32> {
@@ -1172,6 +1172,28 @@ impl RustAlphaBetaEngine {
             return Some(terminal_score);
         }
 
+        // TT probe in quiescence search
+        let tt_key = board_hash(board);
+        let tt_idx = tt_key as usize & TT_MASK;
+        let tt_entry = {
+            let entry = self.tt[tt_idx];
+            if entry.key == tt_key { Some(entry) } else { None }
+        };
+        if let Some(entry) = tt_entry {
+            if entry.depth >= 0 {
+                match entry.flag {
+                    EXACT => return Some(entry.score),
+                    LOWER_BOUND => alpha = alpha.max(entry.score),
+                    UPPER_BOUND => beta = beta.min(entry.score),
+                    _ => {}
+                }
+                if alpha >= beta {
+                    return Some(entry.score);
+                }
+            }
+        }
+        let tt_move = tt_entry.and_then(|e| e.best_move);
+
         let in_check_now = in_check(board);
         let stand_pat = self.evaluate(board);
         if !in_check_now {
@@ -1181,7 +1203,9 @@ impl RustAlphaBetaEngine {
             alpha = alpha.max(stand_pat);
         }
 
-        let mut move_picker = self.scored_moves(board, None, ply, !in_check_now);
+        let mut best_score = if in_check_now { -INFINITY } else { stand_pat };
+        let mut best_move: Option<ChessMove> = None;
+        let mut move_picker = self.scored_moves(board, tt_move, ply, !in_check_now);
         for index in 0..move_picker.len() {
             let chess_move = pick_next_move(&mut move_picker, index)?;
             if !in_check_now {
@@ -1203,10 +1227,30 @@ impl RustAlphaBetaEngine {
             let search = self.quiescence(&child, -beta, -alpha, ply + 1, repetition);
             repetition.pop(child_hash);
             let score = -search?;
+
+            if score > best_score {
+                best_score = score;
+                best_move = Some(chess_move);
+            }
             if score >= beta {
+                // Store in TT
+                self.tt[tt_idx] = TTEntry {
+                    key: tt_key, depth: 0, score, flag: LOWER_BOUND, best_move: Some(chess_move),
+                };
                 return Some(score);
             }
             alpha = alpha.max(score);
+        }
+
+        // Store best result in TT
+        if let Some(bm) = best_move {
+            let flag = if best_score <= stand_pat && !in_check_now { UPPER_BOUND } else { EXACT };
+            let existing = &self.tt[tt_idx];
+            if existing.key == 0 || existing.depth <= 0 {
+                self.tt[tt_idx] = TTEntry {
+                    key: tt_key, depth: 0, score: best_score, flag, best_move: Some(bm),
+                };
+            }
         }
 
         Some(alpha)
