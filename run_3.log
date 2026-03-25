@@ -1,0 +1,886 @@
+Verifying tool integrity...
+Tool integrity verified.
+Compiling engine...
+Compiled in 0s.
+Running gauntlet tournament...
+Gauntlet: 5 SF levels (2000-2400) x 2 games (engine 500ms, SF 100ms)...
+Running: tools/fastchess -engine cmd=engine/target/release/hive-chess proto=uci name=HiveChess tc=40/20 -engine cmd=tools/stockfish proto=uci name=SF_2000 tc=40/4 option.UCI_LimitStrength=true option.UCI_Elo=2000 option.Threads=1 option.Hash=16 -engine cmd=tools/stockfish proto=uci name=SF_2100 tc=40/4 option.UCI_LimitStrength=true option.UCI_Elo=2100 option.Threads=1 option.Hash=16 -engine cmd=tools/stockfish proto=uci name=SF_2200 tc=40/4 option.UCI_LimitStrength=true option.UCI_Elo=2200 option.Threads=1 option.Hash=16 -engine cmd=tools/stockfish proto=uci name=SF_2300 tc=40/4 option.UCI_LimitStrength=true option.UCI_Elo=2300 option.Threads=1 option.Hash=16 -engine cmd=tools/stockfish proto=uci name=SF_2400 tc=40/4 option.UCI_LimitStrength=true option.UCI_Elo=2400 option.Threads=1 option.Hash=16 -tournament gauntlet -rounds 1 -games 2 -repeat -pgnout file=eval/games.pgn -recover -wait 50 -openings file=data/openings.epd format=epd order=random
+Indexing opening suite...
+Started game 1 of 10 (HiveChess vs SF_2000)
+Warning; Bestmove does not match beginning of last PV - move e6e5 from SF_2000
+Info; info depth 13 seldepth 17 multipv 1 score cp 60 nodes 179735 nps 406640 hashfull 67 tbhits 0 time 442 pv d7d5 d2d3 e6e5 c2c3 f8c5 g1f3 g8f6 e2c2 e8g8 f1e2 h7h6 e1g1 a7a5 f1e1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2
+Warning; Bestmove does not match beginning of last PV - move a7a6 from SF_2000
+Info; info depth 10 seldepth 18 multipv 1 score cp 51 nodes 37693 nps 538471 hashfull 12 tbhits 0 time 70 pv g8f6 d2d4 c6d4 f3d4 e5d4 e4e5 f6d5 e2e4 c7c6 e4d4 d8b6 d4d2 f8c5 f1d3 d7d6 e5d6 c5d6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3
+Warning; Bestmove does not match beginning of last PV - move g8f6 from SF_2000
+Info; info depth 11 seldepth 11 multipv 1 score cp 35 nodes 93612 nps 458882 hashfull 27 tbhits 0 time 204 pv f8c5 c3d5 g8e7 c2c3 e8g8 d2d3 a6a5 c1e3 c5e3 d5e3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3
+Warning; Bestmove does not match beginning of last PV - move d4b5 from SF_2000
+Info; info depth 10 seldepth 13 multipv 1 score cp 2 nodes 44177 nps 552212 hashfull 9 tbhits 0 time 80 pv c8g4 f1e2 d4e2 d1e2 f8e7 h2h3 g4d7
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1
+Warning; Bestmove does not match beginning of last PV - move c7c6 from SF_2000
+Info; info depth 11 seldepth 17 multipv 1 score cp 36 nodes 79653 nps 471319 hashfull 19 tbhits 0 time 169 pv f8e7 c1g5 f6d5 e4d5 e7g5 f3g5 d8g5 d3b5 e8d8 e1g1 h7h5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3
+Warning; Bestmove does not match beginning of last PV - move c8d7 from SF_2000
+Info; info depth 12 seldepth 20 multipv 1 score cp 24 nodes 88209 nps 547881 hashfull 25 tbhits 0 time 161 pv f8e7 f1e1 e8g8 d5c6 b7c6 b2b3 d8c7 c1d2 c8e6 a2a4 b5a4 a1a4 a8a4 b3a4 c6c5 d3b5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1
+Warning; Bestmove does not match beginning of last PV - move d8c7 from SF_2000
+Info; info depth 10 seldepth 19 multipv 1 score cp 116 nodes 47871 nps 423637 hashfull 16 tbhits 0 time 113 pv e8g8 c2c3 d8c7 f3d2 d6d5 e1e2 f8e8 h2h3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1
+Warning; Bestmove does not match beginning of last PV - move c6c5 from SF_2000
+Info; info depth 12 seldepth 20 multipv 1 score cp 147 nodes 88993 nps 427850 hashfull 32 tbhits 0 time 208 pv e8g8 b2b4 a8a4 f1b1 c6c5 b4c5 f6e4 d3e4 a4e4 c3d3 e4a4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3
+Warning; Bestmove does not match beginning of last PV - move b5b4 from SF_2000
+Info; info depth 14 seldepth 23 multipv 1 score cp 394 nodes 77395 nps 509177 hashfull 29 tbhits 0 time 152 pv d5d4 e3d4 e5d4 f5d4 c7b6 d4f3 e8g8 e4e5 f6d5 c3d2 d7e6 d3e4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5
+Warning; Bestmove does not match beginning of last PV - move e5d4 from SF_2000
+Info; info depth 11 seldepth 19 multipv 1 score cp 398 nodes 15845 nps 565892 hashfull 5 tbhits 0 time 28 pv a8d8 c2c3 e8g8 a1c1 b4c3 b2c3 e5d4 c3d4 f6e4 d2e3 e4d6 e2c4 d6c4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5 b5b4 c3d2 d7f5 e4f5 c5c4 d3e2 d5d4 e3d4
+Warning; Bestmove does not match beginning of last PV - move e7c5 from SF_2000
+Info; info depth 12 seldepth 19 multipv 1 score cp 391 nodes 26459 nps 472482 hashfull 11 tbhits 0 time 56 pv a8c8 c2c3 e8g8 a1c1 b4b3 a2b3 c4b3 d4a4 e7c5 a4b3 f6e4 e2f3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5 b5b4 c3d2 d7f5 e4f5 c5c4 d3e2 d5d4 e3d4 e5d4 d2d4
+Warning; Bestmove does not match beginning of last PV - move a8b8 from SF_2000
+Info; info depth 10 seldepth 15 multipv 1 score cp 359 nodes 15558 nps 432166 hashfull 4 tbhits 0 time 36 pv e8g8 c2c3 b4c3 c4c3 f6e4 c3d3 e4f2 f1f2 c5f2 g1f2 c7h2 e2f3 h2h4 g2g3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5 b5b4 c3d2 d7f5 e4f5 c5c4 d3e2 d5d4 e3d4 e5d4 d2d4 e7c5 d4c4
+Warning; Bestmove does not match beginning of last PV - move d8d4 from SF_2000
+Info; info depth 13 seldepth 14 multipv 1 score cp 362 nodes 25908 nps 479777 hashfull 8 tbhits 0 time 54 pv b8c8 c4a6 h6h5 e1e2 d8d4 a2a4 b4a3 b2a3 c8d8 a3a4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5 b5b4 c3d2 d7f5 e4f5 c5c4 d3e2 d5d4 e3d4 e5d4 d2d4 e7c5 d4c4 a8b8 f1e1 e8g8 e2d3 f8d8 g2g3
+Warning; Bestmove does not match beginning of last PV - move d4d2 from SF_2000
+Info; info depth 11 seldepth 18 multipv 1 score cp 414 nodes 21754 nps 453208 hashfull 6 tbhits 0 time 48 pv c7a7 b3f3 d4d2 h2h3 b8e8
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5 b5b4 c3d2 d7f5 e4f5 c5c4 d3e2 d5d4 e3d4 e5d4 d2d4 e7c5 d4c4 a8b8 f1e1 e8g8 e2d3 f8d8 g2g3 d8d4 c4b3 h6h5 d3e2
+Warning; Bestmove does not match beginning of last PV - move b8d8 from SF_2000
+Info; info depth 12 seldepth 13 multipv 1 score cp 481 nodes 18204 nps 551636 hashfull 5 tbhits 0 time 33 pv f6e4 b3c4 c5f2 g1f1 c7c4 e2c4 f2e1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5 b5b4 c3d2 d7f5 e4f5 c5c4 d3e2 d5d4 e3d4 e5d4 d2d4 e7c5 d4c4 a8b8 f1e1 e8g8 e2d3 f8d8 g2g3 d8d4 c4b3 h6h5 d3e2 d4d2 a1d1
+Warning; Bestmove does not match beginning of last PV - move c7a7 from SF_2000
+Info; info depth 11 seldepth 17 multipv 1 score cp 441 nodes 17772 nps 480324 hashfull 5 tbhits 0 time 37 pv f6e4 f1g2 c5f2 d1d2 e4d2 e1d1 d2b3 d1d8 c7d8
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5 b5b4 c3d2 d7f5 e4f5 c5c4 d3e2 d5d4 e3d4 e5d4 d2d4 e7c5 d4c4 a8b8 f1e1 e8g8 e2d3 f8d8 g2g3 d8d4 c4b3 h6h5 d3e2 d4d2 a1d1 b8d8 g1f1
+Warning; Bestmove does not match beginning of last PV - move a7d7 from SF_2000
+Info; info depth 10 seldepth 12 multipv 1 score cp 502 nodes 10145 nps 676333 hashfull 1 tbhits 0 time 15 pv f6e4 e2d3 d2d1 f1g2 d1d2 d3e4 d2f2 g2h3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5 b5b4 c3d2 d7f5 e4f5 c5c4 d3e2 d5d4 e3d4 e5d4 d2d4 e7c5 d4c4 a8b8 f1e1 e8g8 e2d3 f8d8 g2g3 d8d4 c4b3 h6h5 d3e2 d4d2 a1d1 b8d8 g1f1 c7a7 d1d2 d8d2 e1d1
+Warning; Bestmove does not match beginning of last PV - move d6c7 from SF_2000
+Info; info depth 10 seldepth 21 multipv 1 score cp 264 nodes 15051 nps 456090 hashfull 16 tbhits 0 time 33 pv d6b6 e2d3 b6c6 c2c3 b4c3 b2c3 c6f3 c4c5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5 b5b4 c3d2 d7f5 e4f5 c5c4 d3e2 d5d4 e3d4 e5d4 d2d4 e7c5 d4c4 a8b8 f1e1 e8g8 e2d3 f8d8 g2g3 d8d4 c4b3 h6h5 d3e2 d4d2 a1d1 b8d8 g1f1 c7a7 d1d2 d8d2 e1d1 a7d7 d1d2 d7d2 b3c4 d2d6 h2h3
+Warning; Bestmove does not match beginning of last PV - move h5g4 from SF_2000
+Info; info depth 11 seldepth 12 multipv 1 score cp 290 nodes 16567 nps 613592 hashfull 20 tbhits 0 time 27 pv e5f4 d5e4 f4c1 f1g2 c1d2 e4e2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5 b5b4 c3d2 d7f5 e4f5 c5c4 d3e2 d5d4 e3d4 e5d4 d2d4 e7c5 d4c4 a8b8 f1e1 e8g8 e2d3 f8d8 g2g3 d8d4 c4b3 h6h5 d3e2 d4d2 a1d1 b8d8 g1f1 c7a7 d1d2 d8d2 e1d1 a7d7 d1d2 d7d2 b3c4 d2d6 h2h3 d6c7 e2f3 c7e5 g3g4 f6d7 c4d5
+Warning; Bestmove does not match beginning of last PV - move h2h4 from SF_2000
+Info; info depth 10 seldepth 17 multipv 1 score cp 296 nodes 14372 nps 598833 hashfull 21 tbhits 0 time 24 pv h2f4 g2f3 f4h2 f3g2 h2h4 d5d2 d7e5 g4g5 g8h7 c2c3 b4c3 b2c3 h4c4 d2e2 c4c3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5 b5b4 c3d2 d7f5 e4f5 c5c4 d3e2 d5d4 e3d4 e5d4 d2d4 e7c5 d4c4 a8b8 f1e1 e8g8 e2d3 f8d8 g2g3 d8d4 c4b3 h6h5 d3e2 d4d2 a1d1 b8d8 g1f1 c7a7 d1d2 d8d2 e1d1 a7d7 d1d2 d7d2 b3c4 d2d6 h2h3 d6c7 e2f3 c7e5 g3g4 f6d7 c4d5 h5g4 h3g4 e5h2 f3g2
+Warning; Bestmove does not match beginning of last PV - move h4h6 from SF_2000
+Info; info depth 11 seldepth 15 multipv 1 score cp 340 nodes 12583 nps 571954 hashfull 18 tbhits 0 time 22 pv h4g5 f1e2 d7f6 c2c3 f6g4 c3b4 c5b4 f3a8 b4f8
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5 b5b4 c3d2 d7f5 e4f5 c5c4 d3e2 d5d4 e3d4 e5d4 d2d4 e7c5 d4c4 a8b8 f1e1 e8g8 e2d3 f8d8 g2g3 d8d4 c4b3 h6h5 d3e2 d4d2 a1d1 b8d8 g1f1 c7a7 d1d2 d8d2 e1d1 a7d7 d1d2 d7d2 b3c4 d2d6 h2h3 d6c7 e2f3 c7e5 g3g4 f6d7 c4d5 h5g4 h3g4 e5h2 f3g2 h2h4 d5f3
+Warning; Bestmove does not match beginning of last PV - move d7f6 from SF_2000
+Info; info depth 18 seldepth 32 multipv 1 score cp 302 nodes 465086 nps 553673 hashfull 196 tbhits 0 time 840 pv h6c1 f3a8 c5f8 a8c6 d7c5 g2e4 c1b2 g4g5 b2d4 e4d5 d4g4 e2f1 g4g5 d5f7 g8f7 c6d5 f7f6 d5d8 f8e7 d8b6 f6f5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5 b5b4 c3d2 d7f5 e4f5 c5c4 d3e2 d5d4 e3d4 e5d4 d2d4 e7c5 d4c4 a8b8 f1e1 e8g8 e2d3 f8d8 g2g3 d8d4 c4b3 h6h5 d3e2 d4d2 a1d1 b8d8 g1f1 c7a7 d1d2 d8d2 e1d1 a7d7 d1d2 d7d2 b3c4 d2d6 h2h3 d6c7 e2f3 c7e5 g3g4 f6d7 c4d5 h5g4 h3g4 e5h2 f3g2 h2h4 d5f3 h4h6 f1e2
+Warning; Bestmove does not match beginning of last PV - move g8f8 from SF_2000
+Info; info depth 14 seldepth 34 multipv 1 score cp 236 nodes 109969 nps 628394 hashfull 40 tbhits 0 time 175 pv e7f8 c7c4 h6c1 b2b3 c1g1 g2f3 g1a1 c4d3 f8c5 g4g5 a1e5 e2d1 f6e8 d3d5 e5d5 f3d5 e8d6 c2c3 b4c3 d1c2 c5f2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5 b5b4 c3d2 d7f5 e4f5 c5c4 d3e2 d5d4 e3d4 e5d4 d2d4 e7c5 d4c4 a8b8 f1e1 e8g8 e2d3 f8d8 g2g3 d8d4 c4b3 h6h5 d3e2 d4d2 a1d1 b8d8 g1f1 c7a7 d1d2 d8d2 e1d1 a7d7 d1d2 d7d2 b3c4 d2d6 h2h3 d6c7 e2f3 c7e5 g3g4 f6d7 c4d5 h5g4 h3g4 e5h2 f3g2 h2h4 d5f3 h4h6 f1e2 d7f6 f3c6 c5e7 c6c7
+Warning; Bestmove does not match beginning of last PV - move e7d8 from SF_2000
+Info; info depth 15 seldepth 21 multipv 1 score cp -308 nodes 197345 nps 523461 hashfull 95 tbhits 0 time 377 pv f6e8 g2c6 f8g8 c8e8 e7f8 c6d5 h6a6 e2d2 a6f6 c2c3 b4c3 b2c3 g7g6 e8e4 f8g7 f5g6 f6f2 d2d3 f2f1 d3c2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5 b5b4 c3d2 d7f5 e4f5 c5c4 d3e2 d5d4 e3d4 e5d4 d2d4 e7c5 d4c4 a8b8 f1e1 e8g8 e2d3 f8d8 g2g3 d8d4 c4b3 h6h5 d3e2 d4d2 a1d1 b8d8 g1f1 c7a7 d1d2 d8d2 e1d1 a7d7 d1d2 d7d2 b3c4 d2d6 h2h3 d6c7 e2f3 c7e5 g3g4 f6d7 c4d5 h5g4 h3g4 e5h2 f3g2 h2h4 d5f3 h4h6 f1e2 d7f6 f3c6 c5e7 c6c7 g8f8 c7c8
+Warning; Bestmove does not match beginning of last PV - move h6h7 from SF_2000
+Info; info depth 14 seldepth 27 multipv 1 score cp -353 nodes 233390 nps 848690 hashfull 60 tbhits 0 time 275 pv h6h4 c8d8 f6e8 e2e3 f7f6 g5f6 g7f6 d8d5 h4h2 e3e2 e8d6 a2a4 b4a3 b2a3 f8g7
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5 b5b4 c3d2 d7f5 e4f5 c5c4 d3e2 d5d4 e3d4 e5d4 d2d4 e7c5 d4c4 a8b8 f1e1 e8g8 e2d3 f8d8 g2g3 d8d4 c4b3 h6h5 d3e2 d4d2 a1d1 b8d8 g1f1 c7a7 d1d2 d8d2 e1d1 a7d7 d1d2 d7d2 b3c4 d2d6 h2h3 d6c7 e2f3 c7e5 g3g4 f6d7 c4d5 h5g4 h3g4 e5h2 f3g2 h2h4 d5f3 h4h6 f1e2 d7f6 f3c6 c5e7 c6c7 g8f8 c7c8 e7d8 g4g5
+Warning; Bestmove does not match beginning of last PV - move h5h1 from SF_2000
+Info; info depth 14 seldepth 38 multipv 1 score cp -896 nodes 703957 nps 2159377 hashfull 190 tbhits 0 time 326 pv f8g8 d8e8 g8h7 c6e4 h5g5 f5f6 g5g6 e1d2 h7h6 e8h8 h6g5 e4d3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5 b5b4 c3d2 d7f5 e4f5 c5c4 d3e2 d5d4 e3d4 e5d4 d2d4 e7c5 d4c4 a8b8 f1e1 e8g8 e2d3 f8d8 g2g3 d8d4 c4b3 h6h5 d3e2 d4d2 a1d1 b8d8 g1f1 c7a7 d1d2 d8d2 e1d1 a7d7 d1d2 d7d2 b3c4 d2d6 h2h3 d6c7 e2f3 c7e5 g3g4 f6d7 c4d5 h5g4 h3g4 e5h2 f3g2 h2h4 d5f3 h4h6 f1e2 d7f6 f3c6 c5e7 c6c7 g8f8 c7c8 e7d8 g4g5 h6h7 c8d8 f6e8 g2c6 h7h5 e2e1
+Warning; Bestmove does not match beginning of last PV - move g7g6 from SF_2000
+Info; info depth 34 seldepth 11 multipv 1 score mate -5 nodes 30111 nps 1584789 hashfull 7 tbhits 0 time 19 pv b4b3 a2b3 f8g8 d8e8 g8h7 e8f7 h7h8 h1d5 h8h7 f7h5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5 b5b4 c3d2 d7f5 e4f5 c5c4 d3e2 d5d4 e3d4 e5d4 d2d4 e7c5 d4c4 a8b8 f1e1 e8g8 e2d3 f8d8 g2g3 d8d4 c4b3 h6h5 d3e2 d4d2 a1d1 b8d8 g1f1 c7a7 d1d2 d8d2 e1d1 a7d7 d1d2 d7d2 b3c4 d2d6 h2h3 d6c7 e2f3 c7e5 g3g4 f6d7 c4d5 h5g4 h3g4 e5h2 f3g2 h2h4 d5f3 h4h6 f1e2 d7f6 f3c6 c5e7 c6c7 g8f8 c7c8 e7d8 g4g5 h6h7 c8d8 f6e8 g2c6 h7h5 e2e1 h5h1 c6h1
+Warning; Bestmove does not match beginning of last PV - move f8g8 from SF_2000
+Info; info depth 33 seldepth 11 multipv 1 score mate -5 nodes 77609 nps 1847833 hashfull 22 tbhits 0 time 42 pv g6f5 c6e8 b4b3 d8d7 f8g7 d7f7 g7h8 f7f8 h8h7 g5g6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5 b5b4 c3d2 d7f5 e4f5 c5c4 d3e2 d5d4 e3d4 e5d4 d2d4 e7c5 d4c4 a8b8 f1e1 e8g8 e2d3 f8d8 g2g3 d8d4 c4b3 h6h5 d3e2 d4d2 a1d1 b8d8 g1f1 c7a7 d1d2 d8d2 e1d1 a7d7 d1d2 d7d2 b3c4 d2d6 h2h3 d6c7 e2f3 c7e5 g3g4 f6d7 c4d5 h5g4 h3g4 e5h2 f3g2 h2h4 d5f3 h4h6 f1e2 d7f6 f3c6 c5e7 c6c7 g8f8 c7c8 e7d8 g4g5 h6h7 c8d8 f6e8 g2c6 h7h5 e2e1 h5h1 c6h1 g7g6 h1c6
+Warning; Bestmove does not match beginning of last PV - move g8h7 from SF_2000
+Info; info depth 141 seldepth 7 multipv 1 score mate -3 nodes 155006 nps 6458583 hashfull 1 tbhits 0 time 24 pv g8g7 f5f6 g7h7 e8f7 h7h8 f7g7
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 g8f6 d2d4 d7d6 d4d5 c6d4 e2d1 d4b5 c3b5 a6b5 f1d3 c7c6 e1g1 c8d7 d1e2 f8e7 d5c6 b7c6 c1e3 h7h6 e2e1 d8c7 e1c3 c6c5 f3h4 d6d5 h4f5 b5b4 c3d2 d7f5 e4f5 c5c4 d3e2 d5d4 e3d4 e5d4 d2d4 e7c5 d4c4 a8b8 f1e1 e8g8 e2d3 f8d8 g2g3 d8d4 c4b3 h6h5 d3e2 d4d2 a1d1 b8d8 g1f1 c7a7 d1d2 d8d2 e1d1 a7d7 d1d2 d7d2 b3c4 d2d6 h2h3 d6c7 e2f3 c7e5 g3g4 f6d7 c4d5 h5g4 h3g4 e5h2 f3g2 h2h4 d5f3 h4h6 f1e2 d7f6 f3c6 c5e7 c6c7 g8f8 c7c8 e7d8 g4g5 h6h7 c8d8 f6e8 g2c6 h7h5 e2e1 h5h1 c6h1 g7g6 h1c6 f8g8 d8e8
+Finished game 1 (HiveChess vs SF_2000): 1-0 {White mates}
+Started game 2 of 10 (SF_2000 vs HiveChess)
+Warning; Bestmove does not match beginning of last PV - move d2d4 from SF_2000
+Info; info depth 13 seldepth 28 multipv 1 score cp -30 nodes 177784 nps 421289 hashfull 61 tbhits 0 time 422 pv e4d5 e6d5 d2d4 g8f6 f1d3 c8g4 f3e3 f8e7 g1e2 e8g8 f2f3 g4h5 e1g1 e7d6 e3f2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5
+Warning; Bestmove does not match beginning of last PV - move h2h3 from SF_2000
+Info; info depth 10 seldepth 15 multipv 1 score cp -2 nodes 68262 nps 458134 hashfull 23 tbhits 0 time 149 pv g1f3 e8g8 b1d2 f8e8 f3e5 c6e5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 d2d4 d5e4 f3e4 g8f6 e4e2 f8e7
+Warning; Bestmove does not match beginning of last PV - move b1d2 from SF_2000
+Info; info depth 11 seldepth 16 multipv 1 score cp -38 nodes 79662 nps 432945 hashfull 28 tbhits 0 time 184 pv g1f3 e7d6 b1d2 e6e5 d4e5 f8e8 d2c4 c6e5 c4e5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 d2d4 d5e4 f3e4 g8f6 e4e2 f8e7 h2h3 e8g8
+Warning; Bestmove does not match beginning of last PV - move e2e5 from SF_2000
+Info; info depth 12 seldepth 22 multipv 1 score cp 6 nodes 59196 nps 451877 hashfull 17 tbhits 0 time 131 pv d4e5 c8d7 d2f3 d7a4 b2b3 a4c6 e2c2 a7a5 c1d2 a5a4 b3b4 d5b6 f1e2 c6f3 e2f3 c7c6 f3e4 g7g6 a1d1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 d2d4 d5e4 f3e4 g8f6 e4e2 f8e7 h2h3 e8g8 b1d2 f8e8 g1f3 f6d5 f3e5 c6e5
+Warning; Bestmove does not match beginning of last PV - move e5e2 from SF_2000
+Info; info depth 13 seldepth 22 multipv 1 score cp -290 nodes 146043 nps 525334 hashfull 48 tbhits 0 time 278 pv e5g3 e6e5 d4e5 e8e5 f1e2 d8e7 g3f3 d5f4 d2e4 f4e2 e4f6 e7f6 c1e3 f6f3 g2f3 e2f4 e1c1 f4d5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 d2d4 d5e4 f3e4 g8f6 e4e2 f8e7 h2h3 e8g8 b1d2 f8e8 g1f3 f6d5 f3e5 c6e5 e2e5 e7f6
+Warning; Bestmove does not match beginning of last PV - move d4e5 from SF_2000
+Info; info depth 15 seldepth 20 multipv 1 score cp -338 nodes 120303 nps 495074 hashfull 36 tbhits 0 time 243 pv d2e4 c8f5 e4f6 d8f6 c1e3 d5e3 f2e3 e5d4 c3d4 f6h4 e2f2 h4d4 f1e2 d4e3 f2e3 e8e3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 d2d4 d5e4 f3e4 g8f6 e4e2 f8e7 h2h3 e8g8 b1d2 f8e8 g1f3 f6d5 f3e5 c6e5 e2e5 e7f6 e5e2 e6e5
+Warning; Bestmove does not match beginning of last PV - move d5c3 from HiveChess
+Info; info depth 10 score cp 196 nodes 487424 pv e8e5 d2e4 c8d7 g2g4 d5c3 b2c3 e5e4 c1e3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 d2d4 d5e4 f3e4 g8f6 e4e2 f8e7 h2h3 e8g8 b1d2 f8e8 g1f3 f6d5 f3e5 c6e5 e2e5 e7f6 e5e2 e6e5 d4e5
+Warning; Bestmove does not match beginning of last PV - move c1b2 from SF_2000
+Info; info depth 13 seldepth 24 multipv 1 score cp -292 nodes 55938 nps 543087 hashfull 21 tbhits 0 time 103 pv d2e4 e5e4 e2e4 f6c3 e1e2 c3a1 c1g5 d8f8 e2f3 c8d7 e4b7 f8e8 f1c4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 d2d4 d5e4 f3e4 g8f6 e4e2 f8e7 h2h3 e8g8 b1d2 f8e8 g1f3 f6d5 f3e5 c6e5 e2e5 e7f6 e5e2 e6e5 d4e5 d5c3 b2c3 e8e5
+Warning; Bestmove does not match beginning of last PV - move a1d1 from SF_2000
+Info; info depth 14 seldepth 28 multipv 1 score cp -460 nodes 117151 nps 600774 hashfull 48 tbhits 0 time 195 pv d2c4 e5e2 f1e2 c8d7 c4e3 d7b5 e2b5 e8b5 e1c1 a8e8 h1e1 b5g5 d1d5 g5g6 d5f5 h7h5 f5f6 g7f6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 d2d4 d5e4 f3e4 g8f6 e4e2 f8e7 h2h3 e8g8 b1d2 f8e8 g1f3 f6d5 f3e5 c6e5 e2e5 e7f6 e5e2 e6e5 d4e5 d5c3 b2c3 e8e5 c1b2 d8e8
+Warning; Bestmove does not match beginning of last PV - move b2c1 from SF_2000
+Info; info depth 15 seldepth 19 multipv 1 score cp -361 nodes 91072 nps 576405 hashfull 29 tbhits 0 time 158 pv e1g1 c8f5 f1e1 f5c2 d1c1 f6g5 e2f3 g5d2 f3b7 d2e1 c1e1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 d2d4 d5e4 f3e4 g8f6 e4e2 f8e7 h2h3 e8g8 b1d2 f8e8 g1f3 f6d5 f3e5 c6e5 e2e5 e7f6 e5e2 e6e5 d4e5 d5c3 b2c3 e8e5 c1b2 d8e8 a1d1 e5e2 f1e2 e8a4
+Warning; Bestmove does not match beginning of last PV - move g2g3 from SF_2000
+Info; info depth 15 seldepth 18 multipv 1 score cp -409 nodes 82708 nps 780264 hashfull 32 tbhits 0 time 106 pv e1g1 f5c2 d1e1 f6c3 e2f3 c3b4 d2b3 b4e1 f1e1 a8d8
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 d2d4 d5e4 f3e4 g8f6 e4e2 f8e7 h2h3 e8g8 b1d2 f8e8 g1f3 f6d5 f3e5 c6e5 e2e5 e7f6 e5e2 e6e5 d4e5 d5c3 b2c3 e8e5 c1b2 d8e8 a1d1 e5e2 f1e2 e8a4 b2c1 c8f5
+Warning; Bestmove does not match beginning of last PV - move d2b1 from SF_2000
+Info; info depth 14 seldepth 21 multipv 1 score cp -437 nodes 61986 nps 968531 hashfull 22 tbhits 0 time 64 pv d1e1 a8d8 e2f3 c2d3 e1e7 c3f6 f1e1 f6e7 e1e7 a4a2 f3b7 g8h8 d2f3 d3g6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 d2d4 d5e4 f3e4 g8f6 e4e2 f8e7 h2h3 e8g8 b1d2 f8e8 g1f3 f6d5 f3e5 c6e5 e2e5 e7f6 e5e2 e6e5 d4e5 d5c3 b2c3 e8e5 c1b2 d8e8 a1d1 e5e2 f1e2 e8a4 b2c1 c8f5 g2g3 f5c2 e1g1 f6c3
+Warning; Bestmove does not match beginning of last PV - move f3b7 from SF_2000
+Info; info depth 13 seldepth 15 multipv 1 score cp -451 nodes 33811 nps 1470043 hashfull 13 tbhits 0 time 23 pv d1d5 c7c6 d5d7 h7h6 d7b7 g8h8 c1f4 c6c5 f1c1 a8c8 f3g4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 d2d4 d5e4 f3e4 g8f6 e4e2 f8e7 h2h3 e8g8 b1d2 f8e8 g1f3 f6d5 f3e5 c6e5 e2e5 e7f6 e5e2 e6e5 d4e5 d5c3 b2c3 e8e5 c1b2 d8e8 a1d1 e5e2 f1e2 e8a4 b2c1 c8f5 g2g3 f5c2 e1g1 f6c3 d2b1 c2b1 e2f3 b1c2
+Warning; Bestmove does not match beginning of last PV - move c1b2 from SF_2000
+Info; info depth 13 seldepth 21 multipv 1 score cp -567 nodes 58515 nps 1539868 hashfull 21 tbhits 0 time 38 pv b7a8 d1e2 c1b2 e2f1 b2c3 f1b5 c3e5 h7h5 e5c7 g8h8 a8d5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 d2d4 d5e4 f3e4 g8f6 e4e2 f8e7 h2h3 e8g8 b1d2 f8e8 g1f3 f6d5 f3e5 c6e5 e2e5 e7f6 e5e2 e6e5 d4e5 d5c3 b2c3 e8e5 c1b2 d8e8 a1d1 e5e2 f1e2 e8a4 b2c1 c8f5 g2g3 f5c2 e1g1 f6c3 d2b1 c2b1 e2f3 b1c2 f3b7 c2d1
+Warning; Bestmove does not match beginning of last PV - move f1e1 from SF_2000
+Info; info depth 14 seldepth 17 multipv 1 score cp -703 nodes 82073 nps 1609274 hashfull 27 tbhits 0 time 51 pv g3g4 b7b8 c3e5 b8b1 f1e1 h7h5 g4h5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 d2d4 d5e4 f3e4 g8f6 e4e2 f8e7 h2h3 e8g8 b1d2 f8e8 g1f3 f6d5 f3e5 c6e5 e2e5 e7f6 e5e2 e6e5 d4e5 d5c3 b2c3 e8e5 c1b2 d8e8 a1d1 e5e2 f1e2 e8a4 b2c1 c8f5 g2g3 f5c2 e1g1 f6c3 d2b1 c2b1 e2f3 b1c2 f3b7 c2d1 c1b2 a8b8 b2c3 b8b7
+Warning; Bestmove does not match beginning of last PV - move c3d4 from SF_2000
+Info; info depth 13 seldepth 18 multipv 1 score cp -724 nodes 77568 nps 1616000 hashfull 34 tbhits 0 time 48 pv g1h2 g8h7 e1e7 a4c4 c3a1 d1f3 a1e5 h6h5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 d2d4 d5e4 f3e4 g8f6 e4e2 f8e7 h2h3 e8g8 b1d2 f8e8 g1f3 f6d5 f3e5 c6e5 e2e5 e7f6 e5e2 e6e5 d4e5 d5c3 b2c3 e8e5 c1b2 d8e8 a1d1 e5e2 f1e2 e8a4 b2c1 c8f5 g2g3 f5c2 e1g1 f6c3 d2b1 c2b1 e2f3 b1c2 f3b7 c2d1 c1b2 a8b8 b2c3 b8b7 f1e1 h7h6
+Warning; Bestmove does not match beginning of last PV - move a2a4 from SF_2000
+Info; info depth 13 seldepth 17 multipv 1 score cp -896 nodes 93281 nps 1865620 hashfull 28 tbhits 0 time 50 pv g3g4 b7b1 g4g5 g8h7 g5h6 g7g6 e1d1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 d2d4 d5e4 f3e4 g8f6 e4e2 f8e7 h2h3 e8g8 b1d2 f8e8 g1f3 f6d5 f3e5 c6e5 e2e5 e7f6 e5e2 e6e5 d4e5 d5c3 b2c3 e8e5 c1b2 d8e8 a1d1 e5e2 f1e2 e8a4 b2c1 c8f5 g2g3 f5c2 e1g1 f6c3 d2b1 c2b1 e2f3 b1c2 f3b7 c2d1 c1b2 a8b8 b2c3 b8b7 f1e1 h7h6 c3d4 a4d4
+Warning; Bestmove does not match beginning of last PV - move e1e8 from SF_2000
+Info; info depth 14 seldepth 28 multipv 1 score cp -1034 nodes 73223 nps 1830575 hashfull 30 tbhits 0 time 40 pv e1f1 g8h7 g3g4 b2b1 g4g5 h6g5 a4a5 d4d2 h3h4 g7g6 h4g5 d2e2 f1d1 e2d1 g1g2 d1g4 g2h2 g4g1 h2h3 b1b3 f2f3 b3f3 h3h4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 d2d4 d5e4 f3e4 g8f6 e4e2 f8e7 h2h3 e8g8 b1d2 f8e8 g1f3 f6d5 f3e5 c6e5 e2e5 e7f6 e5e2 e6e5 d4e5 d5c3 b2c3 e8e5 c1b2 d8e8 a1d1 e5e2 f1e2 e8a4 b2c1 c8f5 g2g3 f5c2 e1g1 f6c3 d2b1 c2b1 e2f3 b1c2 f3b7 c2d1 c1b2 a8b8 b2c3 b8b7 f1e1 h7h6 c3d4 a4d4 a2a4 b7b2
+Warning; Bestmove does not match beginning of last PV - move e8h8 from SF_2000
+Info; info depth 36 seldepth 9 multipv 1 score mate -4 nodes 15697 nps 3139400 hashfull 0 tbhits 0 time 5 pv e8e3 d4d2 e3e2 d2e2 h3h4 e2f2 g1h1 f2h2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 d2d4 d5e4 f3e4 g8f6 e4e2 f8e7 h2h3 e8g8 b1d2 f8e8 g1f3 f6d5 f3e5 c6e5 e2e5 e7f6 e5e2 e6e5 d4e5 d5c3 b2c3 e8e5 c1b2 d8e8 a1d1 e5e2 f1e2 e8a4 b2c1 c8f5 g2g3 f5c2 e1g1 f6c3 d2b1 c2b1 e2f3 b1c2 f3b7 c2d1 c1b2 a8b8 b2c3 b8b7 f1e1 h7h6 c3d4 a4d4 a2a4 b7b2 e1e8 g8h7
+Warning; Bestmove does not match beginning of last PV - move a4a5 from SF_2000
+Info; info depth 116 seldepth 5 multipv 1 score mate -2 nodes 30800 nps 5133333 hashfull 0 tbhits 0 time 6 pv h3h4 d4f2 g1h1 f2f1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 d2d4 d5e4 f3e4 g8f6 e4e2 f8e7 h2h3 e8g8 b1d2 f8e8 g1f3 f6d5 f3e5 c6e5 e2e5 e7f6 e5e2 e6e5 d4e5 d5c3 b2c3 e8e5 c1b2 d8e8 a1d1 e5e2 f1e2 e8a4 b2c1 c8f5 g2g3 f5c2 e1g1 f6c3 d2b1 c2b1 e2f3 b1c2 f3b7 c2d1 c1b2 a8b8 b2c3 b8b7 f1e1 h7h6 c3d4 a4d4 a2a4 b7b2 e1e8 g8h7 e8h8 h7h8
+Finished game 2 (SF_2000 vs HiveChess): 0-1 {Black mates}
+Started game 3 of 10 (HiveChess vs SF_2100)
+Warning; Bestmove does not match beginning of last PV - move e6e5 from SF_2100
+Info; info depth 13 seldepth 23 multipv 1 score cp 60 nodes 191300 nps 433786 hashfull 69 tbhits 0 time 441 pv d7d5 d2d3 e6e5 g1f3 g8f6 c2c3 f8e7 e2c2 e8g8 f1e2 h7h6 b1d2 a7a5 e1g1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2
+Warning; Bestmove does not match beginning of last PV - move a7a6 from SF_2100
+Info; info depth 15 seldepth 18 multipv 1 score cp 46 nodes 175708 nps 440370 hashfull 55 tbhits 0 time 399 pv f8c5 g2g3 g8f6 f1g2 e8g8 e1g1 d7d5 e4d5 f6d5 b1c3 d5b4 d2d3 c8g4 c1e3 c6d4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3
+Warning; Bestmove does not match beginning of last PV - move f8e7 from SF_2100
+Info; info depth 11 seldepth 19 multipv 1 score cp 40 nodes 97558 nps 451657 hashfull 33 tbhits 0 time 216 pv f8c5 g2g3 g8e7 f1g2 d7d6 c3d5 e8g8 c2c3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3
+Warning; Bestmove does not match beginning of last PV - move f6d5 from SF_2100
+Info; info depth 11 seldepth 13 multipv 1 score cp 65 nodes 84738 nps 473396 hashfull 26 tbhits 0 time 179 pv b7b5 c4d3 f6d5 d3d5 e8g8 c2c3 c8b7 f1e2 c6a5 d5e5 f7f5 d2d3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 f8e7 c3d5 g8f6 e2c4
+Warning; Bestmove does not match beginning of last PV - move c6b8 from SF_2100
+Info; info depth 12 seldepth 21 multipv 1 score cp -38 nodes 175314 nps 554791 hashfull 42 tbhits 0 time 316 pv c6d4 f3e5 d7d6 c4d4 d6e5 d4e5 e8g8 e5h5 f8e8 f1e2 e7d6 d2d4 g7g6 h5g5 c8f5 g5d8 a8d8 c1g5 d6e7
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 f8e7 c3d5 g8f6 e2c4 f6d5 e4d5
+Warning; Bestmove does not match beginning of last PV - move c7c5 from SF_2100
+Info; info depth 11 seldepth 22 multipv 1 score cp 9 nodes 86207 nps 471076 hashfull 25 tbhits 0 time 183 pv b7b5 c4f4 e7g5 f4g3 g5h4 g3f4 d7d6 e5f3 f8e8 d3e2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 f8e7 c3d5 g8f6 e2c4 f6d5 e4d5 c6b8 f3e5 e8g8 f1d3
+Warning; Bestmove does not match beginning of last PV - move g7g6 from SF_2100
+Info; info depth 12 seldepth 11 multipv 1 score cp 52 nodes 50102 nps 527389 hashfull 17 tbhits 0 time 95 pv f7f5 e4e3 d7d6 e5f3 f8e8
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 f8e7 c3d5 g8f6 e2c4 f6d5 e4d5 c6b8 f3e5 e8g8 f1d3 c7c5 c4e4
+Warning; Bestmove does not match beginning of last PV - move b7b5 from SF_2100
+Info; info depth 10 seldepth 10 multipv 1 score cp -55 nodes 55986 nps 495451 hashfull 23 tbhits 0 time 113 pv d7d6 e5f3 b8d7 e4f4 b7b5 a2a4 c5c4 d3e2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 f8e7 c3d5 g8f6 e2c4 f6d5 e4d5 c6b8 f3e5 e8g8 f1d3 c7c5 c4e4 g7g6 e1g1
+Warning; Bestmove does not match beginning of last PV - move d8c7 from SF_2100
+Info; info depth 12 seldepth 16 multipv 1 score cp -149 nodes 93725 nps 715458 hashfull 25 tbhits 0 time 131 pv b8c6 d3e4 g8g7 e4d5 f7f5 d5c6 d8c7 c6d5 d6h2 g1h1 f5h5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 f8e7 c3d5 g8f6 e2c4 f6d5 e4d5 c6b8 f3e5 e8g8 f1d3 c7c5 c4e4 g7g6 e1g1 b7b5 d5d6 e7d6 e5f7 f8f7 e4a8
+Warning; Bestmove does not match beginning of last PV - move f7f8 from SF_2100
+Info; info depth 13 seldepth 14 multipv 1 score cp -217 nodes 100820 nps 607349 hashfull 37 tbhits 0 time 166 pv d6h2 g1h1 f7f4 f1e1 f4h4 d2d4 g8g7 e4f3 d7d5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 f8e7 c3d5 g8f6 e2c4 f6d5 e4d5 c6b8 f3e5 e8g8 f1d3 c7c5 c4e4 g7g6 e1g1 b7b5 d5d6 e7d6 e5f7 f8f7 e4a8 d8c7 d3e4
+Warning; Bestmove does not match beginning of last PV - move d6e5 from SF_2100
+Info; info depth 11 seldepth 16 multipv 1 score cp -275 nodes 28291 nps 533792 hashfull 10 tbhits 0 time 53 pv f8f5 d5a8 d6e5 c1b2 d4c6 e4f5 e5b2 f5e4 c5b4 a1e1 b2d4 e4c6 d7c6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 f8e7 c3d5 g8f6 e2c4 f6d5 e4d5 c6b8 f3e5 e8g8 f1d3 c7c5 c4e4 g7g6 e1g1 b7b5 d5d6 e7d6 e5f7 f8f7 e4a8 d8c7 d3e4 f7f8 a8d5 g8g7 h2h3 b8c6 g1h1 c6d4 b2b4
+Warning; Bestmove does not match beginning of last PV - move c5b4 from SF_2100
+Info; info depth 10 seldepth 19 multipv 1 score cp -224 nodes 28495 nps 749868 hashfull 9 tbhits 0 time 38 pv c5c4 a1e1 e2f4 d5c5 h7h6 a3c1 d7d5 e4d5 c7c5 b4c5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 f8e7 c3d5 g8f6 e2c4 f6d5 e4d5 c6b8 f3e5 e8g8 f1d3 c7c5 c4e4 g7g6 e1g1 b7b5 d5d6 e7d6 e5f7 f8f7 e4a8 d8c7 d3e4 f7f8 a8d5 g8g7 h2h3 b8c6 g1h1 c6d4 b2b4 d6e5 c2c3 d4e2 c1a3
+Warning; Bestmove does not match beginning of last PV - move f8f5 from SF_2100
+Info; info depth 11 seldepth 23 multipv 1 score cp -340 nodes 35640 nps 685384 hashfull 12 tbhits 0 time 52 pv f8f7 a1e1 c8b7 d5b7 c7c4 b7d5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 f8e7 c3d5 g8f6 e2c4 f6d5 e4d5 c6b8 f3e5 e8g8 f1d3 c7c5 c4e4 g7g6 e1g1 b7b5 d5d6 e7d6 e5f7 f8f7 e4a8 d8c7 d3e4 f7f8 a8d5 g8g7 h2h3 b8c6 g1h1 c6d4 b2b4 d6e5 c2c3 d4e2 c1a3 c5b4 a3b4
+Warning; Bestmove does not match beginning of last PV - move e5g3 from SF_2100
+Info; info depth 13 seldepth 19 multipv 1 score cp -439 nodes 58848 nps 1279304 hashfull 23 tbhits 0 time 46 pv e5f4 d5c5 c7d8 c5e7 d8e7 b4e7 c8b7 f1e1 e2c3 e7b4 c3d5 a2a3 d5f6 e1e7 g7g6 d4d5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 f8e7 c3d5 g8f6 e2c4 f6d5 e4d5 c6b8 f3e5 e8g8 f1d3 c7c5 c4e4 g7g6 e1g1 b7b5 d5d6 e7d6 e5f7 f8f7 e4a8 d8c7 d3e4 f7f8 a8d5 g8g7 h2h3 b8c6 g1h1 c6d4 b2b4 d6e5 c2c3 d4e2 c1a3 c5b4 a3b4 f8f5 e4f5 g6f5 d2d4
+Warning; Bestmove does not match beginning of last PV - move d7d5 from SF_2100
+Info; info depth 13 seldepth 17 multipv 1 score cp -675 nodes 68583 nps 1558704 hashfull 25 tbhits 0 time 44 pv c7f4 f5f4 g3f4 a1e1 e2c3 b4c3 c8b7
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 f8e7 c3d5 g8f6 e2c4 f6d5 e4d5 c6b8 f3e5 e8g8 f1d3 c7c5 c4e4 g7g6 e1g1 b7b5 d5d6 e7d6 e5f7 f8f7 e4a8 d8c7 d3e4 f7f8 a8d5 g8g7 h2h3 b8c6 g1h1 c6d4 b2b4 d6e5 c2c3 d4e2 c1a3 c5b4 a3b4 f8f5 e4f5 g6f5 d2d4 e5g3 d5f5
+Warning; Bestmove does not match beginning of last PV - move g6g5 from SF_2100
+Info; info depth 11 seldepth 15 multipv 1 score cp -771 nodes 83059 nps 1887704 hashfull 34 tbhits 0 time 44 pv c7f7 e8f7 g6f7 f2g3 f7g6 h1h2 a6a5 b4a5 c8a6 f1f2 b5b4 c3b4 a6c4 a5d8
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 f8e7 c3d5 g8f6 e2c4 f6d5 e4d5 c6b8 f3e5 e8g8 f1d3 c7c5 c4e4 g7g6 e1g1 b7b5 d5d6 e7d6 e5f7 f8f7 e4a8 d8c7 d3e4 f7f8 a8d5 g8g7 h2h3 b8c6 g1h1 c6d4 b2b4 d6e5 c2c3 d4e2 c1a3 c5b4 a3b4 f8f5 e4f5 g6f5 d2d4 e5g3 d5f5 d7d5 f5f8 g7g6 f8e8
+Warning; Bestmove does not match beginning of last PV - move g5h6 from SF_2100
+Info; info depth 14 seldepth 25 multipv 1 score cp -974 nodes 48239 nps 1929560 hashfull 15 tbhits 0 time 25 pv c7e7 e8e7 g5h6 e7e2 g3d6 e2e8 c8h3 e8e3 h6g7 e3h3 b5b4 a1e1 g7g8 h3g4 g8f8 g4f5 f8g7 f5g5 g7f7
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 f8e7 c3d5 g8f6 e2c4 f6d5 e4d5 c6b8 f3e5 e8g8 f1d3 c7c5 c4e4 g7g6 e1g1 b7b5 d5d6 e7d6 e5f7 f8f7 e4a8 d8c7 d3e4 f7f8 a8d5 g8g7 h2h3 b8c6 g1h1 c6d4 b2b4 d6e5 c2c3 d4e2 c1a3 c5b4 a3b4 f8f5 e4f5 g6f5 d2d4 e5g3 d5f5 d7d5 f5f8 g7g6 f8e8 g6g5 b4e7
+Warning; Bestmove does not match beginning of last PV - move h6g6 from SF_2100
+Info; info depth 55 seldepth 7 multipv 1 score mate -3 nodes 18857 nps 3771400 hashfull 0 tbhits 0 time 5 pv h6h5 f8f3 h5g6 f3f6 g6h5 f6g5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 a7a6 b1c3 f8e7 c3d5 g8f6 e2c4 f6d5 e4d5 c6b8 f3e5 e8g8 f1d3 c7c5 c4e4 g7g6 e1g1 b7b5 d5d6 e7d6 e5f7 f8f7 e4a8 d8c7 d3e4 f7f8 a8d5 g8g7 h2h3 b8c6 g1h1 c6d4 b2b4 d6e5 c2c3 d4e2 c1a3 c5b4 a3b4 f8f5 e4f5 g6f5 d2d4 e5g3 d5f5 d7d5 f5f8 g7g6 f8e8 g6g5 b4e7 g5h6 e8f8
+Finished game 3 (HiveChess vs SF_2100): 1-0 {White mates}
+Started game 4 of 10 (SF_2100 vs HiveChess)
+Warning; Bestmove does not match beginning of last PV - move g1e2 from SF_2100
+Info; info depth 11 seldepth 17 multipv 1 score cp -37 nodes 102985 nps 465995 hashfull 33 tbhits 0 time 221 pv c2c3 e6e5 f1b5 g8f6 f3e2 a7a6 b5a4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; 
+Warning; Bestmove does not match beginning of last PV - move e2g3 from SF_2100
+Info; info depth 12 seldepth 15 multipv 1 score cp -52 nodes 103840 nps 408818 hashfull 33 tbhits 0 time 254 pv e4d5 e6d5 d2d4 f8e7 c2c3 g8f6 e2g3 e8g8 f1e2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5
+Warning; Bestmove does not match beginning of last PV - move c2c3 from SF_2100
+Info; info depth 10 seldepth 15 multipv 1 score cp -86 nodes 44089 nps 440890 hashfull 13 tbhits 0 time 100 pv e4d5 e6d5 f1b5 f8c5 e1g1 h7h5 b5c6 b7c6 h2h3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6
+Warning; Bestmove does not match beginning of last PV - move d2d3 from SF_2100
+Info; info depth 12 seldepth 21 multipv 1 score cp -138 nodes 130387 nps 386905 hashfull 40 tbhits 0 time 337 pv f1b5 c8g4 f3e3 d5e4 b5c6 b7c6 g3e4 d8d5 f2f3 g4f5 d2d3 e8c8 e3a7 f6e4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5
+Warning; Bestmove does not match beginning of last PV - move e3g5 from SF_2100
+Info; info depth 13 seldepth 28 multipv 1 score cp -140 nodes 83869 nps 391911 hashfull 35 tbhits 0 time 214 pv e3d2 h7h5 h2h3 g4e6 f1e2 d8d7 d2c2 h5h4 g3f1 f6h5 f1h2 e8c8 c2d1 b7b5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4
+Warning; Bestmove does not match beginning of last PV - move f1e2 from SF_2100
+Info; info depth 13 seldepth 21 multipv 1 score cp -128 nodes 100063 nps 384857 hashfull 29 tbhits 0 time 260 pv d2c2 h6h5 h2h4 g7g6 b1d2 f8e7 d2f3 f6h7 c1d2 h7f8
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4 e3g5 h7h6 g5d2 d8d7
+Warning; Bestmove does not match beginning of last PV - move h2h3 from SF_2100
+Info; info depth 12 seldepth 18 multipv 1 score cp -121 nodes 47522 nps 406170 hashfull 13 tbhits 0 time 117 pv e2g4 f6g4 e1g1 e8c8 d2e2 d4c3 b1c3 g4f6 f1d1 h6h5 c1e3 c6d4 e3d4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4 e3g5 h7h6 g5d2 d8d7 f1e2 f8c5
+Warning; Bestmove does not match beginning of last PV - move a2a3 from SF_2100
+Info; info depth 9 seldepth 19 multipv 1 score cp -95 nodes 27945 nps 388125 hashfull 12 tbhits 0 time 72 pv d2c2 h6h5 b1d2 e8c8 d2f3 h5h4 g3f1 f6h5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4 e3g5 h7h6 g5d2 d8d7 f1e2 f8c5 h2h3 g4e6
+Warning; Bestmove does not match beginning of last PV - move d1e1 from SF_2100
+Info; info depth 10 seldepth 15 multipv 1 score cp -94 nodes 30632 nps 392717 hashfull 10 tbhits 0 time 78 pv b1d2 c6a5 a1b1 f8e8 c3d4 c5d4 d2f3 a5b3 f3d4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4 e3g5 h7h6 g5d2 d8d7 f1e2 f8c5 h2h3 g4e6 a2a3 a7a5 d2d1 a5a4 e1g1 e8g8
+Warning; Bestmove does not match beginning of last PV - move g1h1 from SF_2100
+Info; info depth 13 seldepth 15 multipv 1 score cp -107 nodes 78603 nps 394989 hashfull 22 tbhits 0 time 199 pv g1h2 d7e7 b1d2 c5d6 a1b1 f6d7
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4 e3g5 h7h6 g5d2 d8d7 f1e2 f8c5 h2h3 g4e6 a2a3 a7a5 d2d1 a5a4 e1g1 e8g8 d1e1 g8h7
+Warning; Bestmove does not match beginning of last PV - move f2f4 from SF_2100
+Info; info depth 12 seldepth 16 multipv 1 score cp -149 nodes 69674 nps 389240 hashfull 28 tbhits 0 time 179 pv c3c4 c6a5 b1d2 c5d6 e2d1 g7g5 d2f3 a5b3 d1b3 a4b3 e1d1 g5g4 h3g4 g8g4 f3h2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4 e3g5 h7h6 g5d2 d8d7 f1e2 f8c5 h2h3 g4e6 a2a3 a7a5 d2d1 a5a4 e1g1 e8g8 d1e1 g8h7 g1h1 f8g8
+Warning; Bestmove does not match beginning of last PV - move b1d2 from SF_2100
+Info; info depth 12 seldepth 20 multipv 1 score cp 200 nodes 46182 nps 466484 hashfull 15 tbhits 0 time 99 pv f4e5 a5b3 e5f6 b3a1 d3d4 c5f8 f6g7 g8g7 g3h5 g7g6 e2d3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4 e3g5 h7h6 g5d2 d8d7 f1e2 f8c5 h2h3 g4e6 a2a3 a7a5 d2d1 a5a4 e1g1 e8g8 d1e1 g8h7 g1h1 f8g8 f2f4 d4c3 b2c3 c6a5
+Warning; Bestmove does not match beginning of last PV - move f4f1 from SF_2100
+Info; info depth 9 seldepth 11 multipv 1 score cp 220 nodes 13233 nps 456310 hashfull 4 tbhits 0 time 29 pv d2f3 a5b3 e4e5 d6c6 e5f6 b3a1 f4h4 a1c2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4 e3g5 h7h6 g5d2 d8d7 f1e2 f8c5 h2h3 g4e6 a2a3 a7a5 d2d1 a5a4 e1g1 e8g8 d1e1 g8h7 g1h1 f8g8 f2f4 d4c3 b2c3 c6a5 b1d2 e5f4 f1f4 d7d6
+Warning; Bestmove does not match beginning of last PV - move b2a1 from SF_2100
+Info; info depth 10 seldepth 18 multipv 1 score cp 233 nodes 21958 nps 422269 hashfull 7 tbhits 0 time 52 pv e1a1 h7h8 c3c4 c6d7 d2f3 c7c6 f3e5 d7e8
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4 e3g5 h7h6 g5d2 d8d7 f1e2 f8c5 h2h3 g4e6 a2a3 a7a5 d2d1 a5a4 e1g1 e8g8 d1e1 g8h7 g1h1 f8g8 f2f4 d4c3 b2c3 c6a5 b1d2 e5f4 f1f4 d7d6 f4f1 d6c6 d3d4 c5b6 c1b2 a5b3 e2d3 b3a1
+Warning; Bestmove does not match beginning of last PV - move d2f3 from SF_2100
+Info; info depth 9 seldepth 18 multipv 1 score cp 227 nodes 13818 nps 476482 hashfull 4 tbhits 0 time 29 pv e1e3 f6h7 c4c5 b6a5 d4d5 e6h3 d2f3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4 e3g5 h7h6 g5d2 d8d7 f1e2 f8c5 h2h3 g4e6 a2a3 a7a5 d2d1 a5a4 e1g1 e8g8 d1e1 g8h7 g1h1 f8g8 f2f4 d4c3 b2c3 c6a5 b1d2 e5f4 f1f4 d7d6 f4f1 d6c6 d3d4 c5b6 c1b2 a5b3 e2d3 b3a1 b2a1 h7h8 c3c4 c6d7
+Warning; Bestmove does not match beginning of last PV - move g3e2 from SF_2100
+Info; info depth 9 seldepth 8 multipv 1 score cp 324 nodes 6590 nps 506923 hashfull 2 tbhits 0 time 13 pv d4d5 b6c5 a1f6 g7f6 e4e5 f6f5 e1d2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4 e3g5 h7h6 g5d2 d8d7 f1e2 f8c5 h2h3 g4e6 a2a3 a7a5 d2d1 a5a4 e1g1 e8g8 d1e1 g8h7 g1h1 f8g8 f2f4 d4c3 b2c3 c6a5 b1d2 e5f4 f1f4 d7d6 f4f1 d6c6 d3d4 c5b6 c1b2 a5b3 e2d3 b3a1 b2a1 h7h8 c3c4 c6d7 d2f3 g8d8
+Warning; Bestmove does not match beginning of last PV - move e4e5 from SF_2100
+Info; info depth 8 seldepth 11 multipv 1 score cp 302 nodes 10814 nps 415923 hashfull 2 tbhits 0 time 26 pv e2f4 e6h3 f4h3 b6d4 f3d4 c7c5 d4f5 d7d3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4 e3g5 h7h6 g5d2 d8d7 f1e2 f8c5 h2h3 g4e6 a2a3 a7a5 d2d1 a5a4 e1g1 e8g8 d1e1 g8h7 g1h1 f8g8 f2f4 d4c3 b2c3 c6a5 b1d2 e5f4 f1f4 d7d6 f4f1 d6c6 d3d4 c5b6 c1b2 a5b3 e2d3 b3a1 b2a1 h7h8 c3c4 c6d7 d2f3 g8d8 g3e2 h8g8
+Warning; Bestmove does not match beginning of last PV - move e2g3 from SF_2100
+Info; info depth 10 seldepth 13 multipv 1 score cp 256 nodes 19597 nps 408270 hashfull 5 tbhits 0 time 48 pv e1b1 g7g6 e2f4 e6f5 e5e6 f7e6 f3e5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4 e3g5 h7h6 g5d2 d8d7 f1e2 f8c5 h2h3 g4e6 a2a3 a7a5 d2d1 a5a4 e1g1 e8g8 d1e1 g8h7 g1h1 f8g8 f2f4 d4c3 b2c3 c6a5 b1d2 e5f4 f1f4 d7d6 f4f1 d6c6 d3d4 c5b6 c1b2 a5b3 e2d3 b3a1 b2a1 h7h8 c3c4 c6d7 d2f3 g8d8 g3e2 h8g8 e4e5 f6e8
+Warning; Bestmove does not match beginning of last PV - move e1e4 from SF_2100
+Info; info depth 7 seldepth 9 multipv 1 score cp 260 nodes 7845 nps 523000 hashfull 1 tbhits 0 time 15 pv d4d5 c7c6 e1e4 c6d5 e4h7 g8f8 f3h4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4 e3g5 h7h6 g5d2 d8d7 f1e2 f8c5 h2h3 g4e6 a2a3 a7a5 d2d1 a5a4 e1g1 e8g8 d1e1 g8h7 g1h1 f8g8 f2f4 d4c3 b2c3 c6a5 b1d2 e5f4 f1f4 d7d6 f4f1 d6c6 d3d4 c5b6 c1b2 a5b3 e2d3 b3a1 b2a1 h7h8 c3c4 c6d7 d2f3 g8d8 g3e2 h8g8 e4e5 f6e8 e2g3 b6a7
+Warning; Bestmove does not match beginning of last PV - move h1g1 from SF_2100
+Info; info depth 8 seldepth 13 multipv 1 score cp 407 nodes 5708 nps 439076 hashfull 1 tbhits 0 time 13 pv d4d5 g8f8 e4h7 a7c5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4 e3g5 h7h6 g5d2 d8d7 f1e2 f8c5 h2h3 g4e6 a2a3 a7a5 d2d1 a5a4 e1g1 e8g8 d1e1 g8h7 g1h1 f8g8 f2f4 d4c3 b2c3 c6a5 b1d2 e5f4 f1f4 d7d6 f4f1 d6c6 d3d4 c5b6 c1b2 a5b3 e2d3 b3a1 b2a1 h7h8 c3c4 c6d7 d2f3 g8d8 g3e2 h8g8 e4e5 f6e8 e2g3 b6a7 e1e4 e6h3
+Warning; Bestmove does not match beginning of last PV - move e5f6 from SF_2100
+Info; info depth 12 seldepth 24 multipv 1 score cp 568 nodes 15168 nps 421333 hashfull 33 tbhits 0 time 36 pv f3h4 a7d4 a1d4 d7d4 f5d4 d8d4 h4g6 f8f7
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4 e3g5 h7h6 g5d2 d8d7 f1e2 f8c5 h2h3 g4e6 a2a3 a7a5 d2d1 a5a4 e1g1 e8g8 d1e1 g8h7 g1h1 f8g8 f2f4 d4c3 b2c3 c6a5 b1d2 e5f4 f1f4 d7d6 f4f1 d6c6 d3d4 c5b6 c1b2 a5b3 e2d3 b3a1 b2a1 h7h8 c3c4 c6d7 d2f3 g8d8 g3e2 h8g8 e4e5 f6e8 e2g3 b6a7 e1e4 e6h3 h1g1 h3g4 e4h7 g8f8 d3f5 g4f5 g3f5 f7f6
+Warning; Bestmove does not match beginning of last PV - move h4f5 from SF_2100
+Info; info depth 16 seldepth 28 multipv 1 score cp 804 nodes 299162 nps 1466480 hashfull 120 tbhits 0 time 204 pv h8h7 f7e6 h4f5 d4c4 h7g8 e6d7 g8f7 d7c6 f7c4 c6b6 c4b4 b6c6 f1d1 b7b6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4 e3g5 h7h6 g5d2 d8d7 f1e2 f8c5 h2h3 g4e6 a2a3 a7a5 d2d1 a5a4 e1g1 e8g8 d1e1 g8h7 g1h1 f8g8 f2f4 d4c3 b2c3 c6a5 b1d2 e5f4 f1f4 d7d6 f4f1 d6c6 d3d4 c5b6 c1b2 a5b3 e2d3 b3a1 b2a1 h7h8 c3c4 c6d7 d2f3 g8d8 g3e2 h8g8 e4e5 f6e8 e2g3 b6a7 e1e4 e6h3 h1g1 h3g4 e4h7 g8f8 d3f5 g4f5 g3f5 f7f6 e5f6 g7f6 h7h8 f8f7 h8h7 f7f8 h7h8 f8f7 f3h4 a7d4 a1d4 d7d4 f5d4 d8d4
+Warning; Bestmove does not match beginning of last PV - move h8h7 from SF_2100
+Info; info depth 16 seldepth 22 multipv 1 score cp 1034 nodes 389001 nps 1150890 hashfull 147 tbhits 0 time 338 pv f1e1 c4c1 h8h7 f7f8 e1c1 h6h5 h7h6 f8f7 c1e1 c7c6 h6h5 f7f8 h5h7 a8d8 h7e7 f8g8
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4 e3g5 h7h6 g5d2 d8d7 f1e2 f8c5 h2h3 g4e6 a2a3 a7a5 d2d1 a5a4 e1g1 e8g8 d1e1 g8h7 g1h1 f8g8 f2f4 d4c3 b2c3 c6a5 b1d2 e5f4 f1f4 d7d6 f4f1 d6c6 d3d4 c5b6 c1b2 a5b3 e2d3 b3a1 b2a1 h7h8 c3c4 c6d7 d2f3 g8d8 g3e2 h8g8 e4e5 f6e8 e2g3 b6a7 e1e4 e6h3 h1g1 h3g4 e4h7 g8f8 d3f5 g4f5 g3f5 f7f6 e5f6 g7f6 h7h8 f8f7 h8h7 f7f8 h7h8 f8f7 f3h4 a7d4 a1d4 d7d4 f5d4 d8d4 h4f5 d4c4
+Warning; Bestmove does not match beginning of last PV - move h7h8 from SF_2100
+Info; info depth 17 seldepth 33 multipv 1 score mate 5 nodes 170465 nps 1397254 hashfull 79 tbhits 0 time 122 pv f5h6 e8g7 f1f6 f8e8 h7g8 e8d7 g8g7 d7e8 f6f8
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4 e3g5 h7h6 g5d2 d8d7 f1e2 f8c5 h2h3 g4e6 a2a3 a7a5 d2d1 a5a4 e1g1 e8g8 d1e1 g8h7 g1h1 f8g8 f2f4 d4c3 b2c3 c6a5 b1d2 e5f4 f1f4 d7d6 f4f1 d6c6 d3d4 c5b6 c1b2 a5b3 e2d3 b3a1 b2a1 h7h8 c3c4 c6d7 d2f3 g8d8 g3e2 h8g8 e4e5 f6e8 e2g3 b6a7 e1e4 e6h3 h1g1 h3g4 e4h7 g8f8 d3f5 g4f5 g3f5 f7f6 e5f6 g7f6 h7h8 f8f7 h8h7 f7f8 h7h8 f8f7 f3h4 a7d4 a1d4 d7d4 f5d4 d8d4 h4f5 d4c4 h8h7 f7f8
+Warning; Bestmove does not match beginning of last PV - move h5h4 from SF_2100
+Info; info depth 21 seldepth 10 multipv 1 score mate 5 nodes 286323 nps 1460831 hashfull 107 tbhits 0 time 196 pv g2g3 f4g3 e1e3 g3f4 e3f3 f4e4 h5f5 e4d4 f3d3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 e2g3 g8f6 c2c3 e6e5 d2d3 c8g4 f3e3 d5d4 e3g5 h7h6 g5d2 d8d7 f1e2 f8c5 h2h3 g4e6 a2a3 a7a5 d2d1 a5a4 e1g1 e8g8 d1e1 g8h7 g1h1 f8g8 f2f4 d4c3 b2c3 c6a5 b1d2 e5f4 f1f4 d7d6 f4f1 d6c6 d3d4 c5b6 c1b2 a5b3 e2d3 b3a1 b2a1 h7h8 c3c4 c6d7 d2f3 g8d8 g3e2 h8g8 e4e5 f6e8 e2g3 b6a7 e1e4 e6h3 h1g1 h3g4 e4h7 g8f8 d3f5 g4f5 g3f5 f7f6 e5f6 g7f6 h7h8 f8f7 h8h7 f7f8 h7h8 f8f7 f3h4 a7d4 a1d4 d7d4 f5d4 d8d4 h4f5 d4c4 h8h7 f7f8 h7h8 f8f7 f1e1 f7g6 h8h6 g6f5 h6h5 f5f4
+Finished game 4 (SF_2100 vs HiveChess): 1-0 {White mates}
+Started game 5 of 10 (HiveChess vs SF_2200)
+Warning; Bestmove does not match beginning of last PV - move e6e5 from SF_2200
+Info; info depth 13 seldepth 23 multipv 1 score cp 60 nodes 193823 nps 438513 hashfull 70 tbhits 0 time 442 pv d7d5 d2d3 e6e5 g1f3 g8f6 c2c3 f8e7 e2c2 e8g8 f1e2 h7h6 b1d2 a7a5 e1g1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2
+Warning; Bestmove does not match beginning of last PV - move f8e7 from SF_2200
+Info; info depth 11 seldepth 14 multipv 1 score cp 79 nodes 45718 nps 486361 hashfull 15 tbhits 0 time 94 pv c6d4 e2d1 g8f6 d2d3 d7d5 f1e2 d5e4 c3e4 c8f5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3
+Warning; Bestmove does not match beginning of last PV - move a7a5 from SF_2200
+Info; info depth 10 seldepth 13 multipv 1 score cp 64 nodes 107933 nps 455413 hashfull 39 tbhits 0 time 237 pv e8g8 c3d5 f6d5 e4d5 c6d4 f3d4 e5d4 f1e2 e7f6 e1g1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4
+Warning; Bestmove does not match beginning of last PV - move c6b4 from SF_2200
+Info; info depth 13 seldepth 22 multipv 1 score cp 73 nodes 147634 nps 403371 hashfull 54 tbhits 0 time 366 pv f6d5 e4d5 b7b5 c4c3 e5e4 d5c6 b5b4 c3e3 e4f3 e3f3 d7c6 e1g1 c8e6 d2d3 e7f6 f3c6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4 a7a5 c3d5 e8g8 f1e2
+Warning; Bestmove does not match beginning of last PV - move f6d5 from SF_2200
+Info; info depth 11 seldepth 13 multipv 1 score cp 96 nodes 64070 nps 451197 hashfull 19 tbhits 0 time 142 pv b7b5 c4b3 f6d5 e4d5 a5a4 b3c3 b4d5 c3f3 c8b7 e1g1 d7d6 e5g4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4 a7a5 c3d5 e8g8 f1e2 c6b4 f3e5
+Warning; Bestmove does not match beginning of last PV - move c7c6 from SF_2200
+Info; info depth 11 seldepth 18 multipv 1 score cp 98 nodes 113205 nps 473661 hashfull 36 tbhits 0 time 239 pv c7c5 e1g1 d7d6 a2a3 d6e5 a3b4 c5b4 d2d4 b7b5 c4d3 e5d4 d3d4 e7f6 d4d3 f8e8
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4 a7a5 c3d5 e8g8 f1e2 c6b4 f3e5 f6d5 e4d5
+Warning; Bestmove does not match beginning of last PV - move b7g2 from SF_2200
+Info; info depth 14 seldepth 21 multipv 1 score cp 478 nodes 89617 nps 609639 hashfull 32 tbhits 0 time 147 pv b7d5 c4b5 d5g2 h1g1 a8a5 g1g2 a5b5 e2b5 b4c2 e1d1 c2a1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4 a7a5 c3d5 e8g8 f1e2 c6b4 f3e5 f6d5 e4d5 c7c6 d5c6 d7d5 c4b3 a5a4 b3c3 d5d4 c6b7 c8b7 c3c4
+Warning; Bestmove does not match beginning of last PV - move c8c4 from SF_2200
+Info; info depth 14 seldepth 20 multipv 1 score cp 593 nodes 58162 nps 709292 hashfull 23 tbhits 0 time 82 pv b4c2 e1d1 c8c4 e2c4 c2a1 g1g2 d8c7 f2f4 e7f6 g2e2 f6e5 e2e5 c7c4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4 a7a5 c3d5 e8g8 f1e2 c6b4 f3e5 f6d5 e4d5 c7c6 d5c6 d7d5 c4b3 a5a4 b3c3 d5d4 c6b7 c8b7 c3c4 b7g2 a2a3 a8c8 h1g1
+Warning; Bestmove does not match beginning of last PV - move d8d6 from SF_2200
+Info; info depth 14 seldepth 24 multipv 1 score cp 596 nodes 110401 nps 1187107 hashfull 39 tbhits 0 time 93 pv b4c2 e1d1 c2a1 g1g2 d8c7 f2f4 e7f6 d2d3 f6e5 f4e5 c7e5 c1g5 h7h6 g5d2 e5f6 g2g1 g8h8 d1c1 a1b3 c1c2 b3d2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4 a7a5 c3d5 e8g8 f1e2 c6b4 f3e5 f6d5 e4d5 c7c6 d5c6 d7d5 c4b3 a5a4 b3c3 d5d4 c6b7 c8b7 c3c4 b7g2 a2a3 a8c8 h1g1 c8c4 e2c4
+Warning; Bestmove does not match beginning of last PV - move g2d5 from SF_2200
+Info; info depth 14 seldepth 27 multipv 1 score cp 628 nodes 88696 nps 844723 hashfull 35 tbhits 0 time 105 pv d6e5 g1g2 d4d3 c2d3 e5h5 f2f3 h5f3 g2e2 b4c6 b2b3 a4b3 c4b3 f3d3 b3c2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4 a7a5 c3d5 e8g8 f1e2 c6b4 f3e5 f6d5 e4d5 c7c6 d5c6 d7d5 c4b3 a5a4 b3c3 d5d4 c6b7 c8b7 c3c4 b7g2 a2a3 a8c8 h1g1 c8c4 e2c4 d8d6 e1d1
+Warning; Bestmove does not match beginning of last PV - move e7f6 from SF_2200
+Info; info depth 14 seldepth 23 multipv 1 score cp 608 nodes 116344 nps 849226 hashfull 44 tbhits 0 time 137 pv d5c4 e5c4 d6h2 a3b4 e7h4 d2d3 h2f2 c1d2 f2f3 d1c1 h4e1 a1a4 e1d2 c4d2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4 a7a5 c3d5 e8g8 f1e2 c6b4 f3e5 f6d5 e4d5 c7c6 d5c6 d7d5 c4b3 a5a4 b3c3 d5d4 c6b7 c8b7 c3c4 b7g2 a2a3 a8c8 h1g1 c8c4 e2c4 d8d6 e1d1 g2d5 g1e1
+Warning; Bestmove does not match beginning of last PV - move f6e5 from SF_2200
+Info; info depth 15 seldepth 22 multipv 1 score cp 639 nodes 83335 nps 915769 hashfull 28 tbhits 0 time 91 pv b4c2 d1c2 d5c4 e5c4 d4d3 c2b1 d6c6 c4e5 c6c2 b1a2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4 a7a5 c3d5 e8g8 f1e2 c6b4 f3e5 f6d5 e4d5 c7c6 d5c6 d7d5 c4b3 a5a4 b3c3 d5d4 c6b7 c8b7 c3c4 b7g2 a2a3 a8c8 h1g1 c8c4 e2c4 d8d6 e1d1 g2d5 g1e1 e7f6 f2f4
+Warning; Bestmove does not match beginning of last PV - move b4d5 from SF_2200
+Info; info depth 12 seldepth 22 multipv 1 score cp 712 nodes 18239 nps 1215933 hashfull 10 tbhits 0 time 15 pv d6d5 d2d3 d5f3 e1e2 e5f6 d1d2 f3f4 d2e1 f4f3 a3b4 f6h4 e1d1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4 a7a5 c3d5 e8g8 f1e2 c6b4 f3e5 f6d5 e4d5 c7c6 d5c6 d7d5 c4b3 a5a4 b3c3 d5d4 c6b7 c8b7 c3c4 b7g2 a2a3 a8c8 h1g1 c8c4 e2c4 d8d6 e1d1 g2d5 g1e1 e7f6 f2f4 f6e5 c4d5
+Warning; Bestmove does not match beginning of last PV - move d6b6 from SF_2200
+Info; info depth 15 seldepth 23 multipv 1 score cp 653 nodes 70508 nps 1137225 hashfull 20 tbhits 0 time 62 pv d6g6 d2d3 g6g4 e1e2 g4g1 e2e1 g1h2 c1d2 h7h5 c2c4 d4c3 b2c3 h2h4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4 a7a5 c3d5 e8g8 f1e2 c6b4 f3e5 f6d5 e4d5 c7c6 d5c6 d7d5 c4b3 a5a4 b3c3 d5d4 c6b7 c8b7 c3c4 b7g2 a2a3 a8c8 h1g1 c8c4 e2c4 d8d6 e1d1 g2d5 g1e1 e7f6 f2f4 f6e5 c4d5 b4d5 f4e5
+Warning; Bestmove does not match beginning of last PV - move h7h5 from SF_2200
+Info; info depth 12 seldepth 15 multipv 1 score cp 682 nodes 34719 nps 1157300 hashfull 9 tbhits 0 time 30 pv d4d3 e2g2 f7f5 b2b4 d5f4 g2g5 d3c2 d1c2 f8c8 c2b2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4 a7a5 c3d5 e8g8 f1e2 c6b4 f3e5 f6d5 e4d5 c7c6 d5c6 d7d5 c4b3 a5a4 b3c3 d5d4 c6b7 c8b7 c3c4 b7g2 a2a3 a8c8 h1g1 c8c4 e2c4 d8d6 e1d1 g2d5 g1e1 e7f6 f2f4 f6e5 c4d5 b4d5 f4e5 d6b6 e1e2
+Warning; Bestmove does not match beginning of last PV - move g8h7 from SF_2200
+Info; info depth 12 seldepth 18 multipv 1 score cp 712 nodes 21690 nps 1084500 hashfull 7 tbhits 0 time 20 pv d4d3 b2b4 a4b3 c2d3 b6g6 c1b2 g6d3 a1c1 d3f3 e1e2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4 a7a5 c3d5 e8g8 f1e2 c6b4 f3e5 f6d5 e4d5 c7c6 d5c6 d7d5 c4b3 a5a4 b3c3 d5d4 c6b7 c8b7 c3c4 b7g2 a2a3 a8c8 h1g1 c8c4 e2c4 d8d6 e1d1 g2d5 g1e1 e7f6 f2f4 f6e5 c4d5 b4d5 f4e5 d6b6 e1e2 h7h5 e2e1
+Warning; Bestmove does not match beginning of last PV - move b6c7 from SF_2200
+Info; info depth 13 seldepth 19 multipv 1 score cp 770 nodes 45973 nps 1149325 hashfull 16 tbhits 0 time 40 pv b6g6 h2h3 d4d3 c2d3 g6d3 b1a1 d3f3 d1c2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4 a7a5 c3d5 e8g8 f1e2 c6b4 f3e5 f6d5 e4d5 c7c6 d5c6 d7d5 c4b3 a5a4 b3c3 d5d4 c6b7 c8b7 c3c4 b7g2 a2a3 a8c8 h1g1 c8c4 e2c4 d8d6 e1d1 g2d5 g1e1 e7f6 f2f4 f6e5 c4d5 b4d5 f4e5 d6b6 e1e2 h7h5 e2e1 g8h7 a1b1
+Warning; Bestmove does not match beginning of last PV - move c7c5 from SF_2200
+Info; info depth 12 seldepth 19 multipv 1 score cp 787 nodes 21200 nps 1009523 hashfull 5 tbhits 0 time 21 pv f8c8 c2c4 d4c3 c1g5 c3c2 d1c1 c2b1r c1b1 c7c2 b1a1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4 a7a5 c3d5 e8g8 f1e2 c6b4 f3e5 f6d5 e4d5 c7c6 d5c6 d7d5 c4b3 a5a4 b3c3 d5d4 c6b7 c8b7 c3c4 b7g2 a2a3 a8c8 h1g1 c8c4 e2c4 d8d6 e1d1 g2d5 g1e1 e7f6 f2f4 f6e5 c4d5 b4d5 f4e5 d6b6 e1e2 h7h5 e2e1 g8h7 a1b1 b6c7 d2d3
+Warning; Bestmove does not match beginning of last PV - move g7g6 from SF_2200
+Info; info depth 13 seldepth 14 multipv 1 score cp 688 nodes 31181 nps 1199269 hashfull 8 tbhits 0 time 26 pv c5c6 e2h2 d5e3 c1e3 c6f3 d1e1 f3e3 e1f1 e3e5 f1g1 e5g3 g1h1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4 a7a5 c3d5 e8g8 f1e2 c6b4 f3e5 f6d5 e4d5 c7c6 d5c6 d7d5 c4b3 a5a4 b3c3 d5d4 c6b7 c8b7 c3c4 b7g2 a2a3 a8c8 h1g1 c8c4 e2c4 d8d6 e1d1 g2d5 g1e1 e7f6 f2f4 f6e5 c4d5 b4d5 f4e5 d6b6 e1e2 h7h5 e2e1 g8h7 a1b1 b6c7 d2d3 c7c5 h2h4 f8c8 e1e2
+Warning; Bestmove does not match beginning of last PV - move c8c6 from SF_2200
+Info; info depth 14 seldepth 20 multipv 1 score cp 636 nodes 49350 nps 913888 hashfull 18 tbhits 0 time 54 pv d5e3 e2f2 e3f5 c1g5 c5a5 e1d1 a5e5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4 a7a5 c3d5 e8g8 f1e2 c6b4 f3e5 f6d5 e4d5 c7c6 d5c6 d7d5 c4b3 a5a4 b3c3 d5d4 c6b7 c8b7 c3c4 b7g2 a2a3 a8c8 h1g1 c8c4 e2c4 d8d6 e1d1 g2d5 g1e1 e7f6 f2f4 f6e5 c4d5 b4d5 f4e5 d6b6 e1e2 h7h5 e2e1 g8h7 a1b1 b6c7 d2d3 c7c5 h2h4 f8c8 e1e2 g7g6 d1e1
+Warning; Bestmove does not match beginning of last PV - move e3h3 from SF_2200
+Info; info depth 13 seldepth 24 multipv 1 score cp 913 nodes 49955 nps 1784107 hashfull 51 tbhits 0 time 28 pv c6f6 c2c3 f6f4 g2g6 e3f3 g6g2 f4h4 h1g1 f3e3 g2f2 h4g4 g1f1 e3d3 f1e1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4 a7a5 c3d5 e8g8 f1e2 c6b4 f3e5 f6d5 e4d5 c7c6 d5c6 d7d5 c4b3 a5a4 b3c3 d5d4 c6b7 c8b7 c3c4 b7g2 a2a3 a8c8 h1g1 c8c4 e2c4 d8d6 e1d1 g2d5 g1e1 e7f6 f2f4 f6e5 c4d5 b4d5 f4e5 d6b6 e1e2 h7h5 e2e1 g8h7 a1b1 b6c7 d2d3 c7c5 h2h4 f8c8 e1e2 g7g6 d1e1 c8c6 e1f2 d5e3 f2g1 c5e5 c1e3 e5g3 e2g2 g3e3 g1h1
+Warning; Bestmove does not match beginning of last PV - move f6f5 from SF_2200
+Info; info depth 16 seldepth 16 multipv 1 score mate 8 nodes 23976 nps 1998000 hashfull 31 tbhits 0 time 12 pv f6f4 b1d1 e3f3 h2g2 f3d1 h1h2 d1e1 g2g3 e1f2 h2h3 f2f1 g3g2 f1h1 g2h2 h1f3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4 a7a5 c3d5 e8g8 f1e2 c6b4 f3e5 f6d5 e4d5 c7c6 d5c6 d7d5 c4b3 a5a4 b3c3 d5d4 c6b7 c8b7 c3c4 b7g2 a2a3 a8c8 h1g1 c8c4 e2c4 d8d6 e1d1 g2d5 g1e1 e7f6 f2f4 f6e5 c4d5 b4d5 f4e5 d6b6 e1e2 h7h5 e2e1 g8h7 a1b1 b6c7 d2d3 c7c5 h2h4 f8c8 e1e2 g7g6 d1e1 c8c6 e1f2 d5e3 f2g1 c5e5 c1e3 e5g3 e2g2 g3e3 g1h1 e3h3 h1g1 h3e3 g1h1 c6f6 g2h2
+Warning; Bestmove does not match beginning of last PV - move f4f3 from SF_2200
+Info; info depth 245 seldepth 2 multipv 1 score mate 1 nodes 222218 nps 7662689 hashfull 14 tbhits 0 time 29 pv d1g4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 b1c3 f8e7 g1f3 g8f6 e2c4 a7a5 c3d5 e8g8 f1e2 c6b4 f3e5 f6d5 e4d5 c7c6 d5c6 d7d5 c4b3 a5a4 b3c3 d5d4 c6b7 c8b7 c3c4 b7g2 a2a3 a8c8 h1g1 c8c4 e2c4 d8d6 e1d1 g2d5 g1e1 e7f6 f2f4 f6e5 c4d5 b4d5 f4e5 d6b6 e1e2 h7h5 e2e1 g8h7 a1b1 b6c7 d2d3 c7c5 h2h4 f8c8 e1e2 g7g6 d1e1 c8c6 e1f2 d5e3 f2g1 c5e5 c1e3 e5g3 e2g2 g3e3 g1h1 e3h3 h1g1 h3e3 g1h1 c6f6 g2h2 f6f5 b1a1 f5f4 a1g1 e3f3 g1g2 f4g4 h1g1 f3d1 g1f2 g4f4 f2g3
+Finished game 5 (HiveChess vs SF_2200): 0-1 {Black mates}
+Started game 6 of 10 (SF_2200 vs HiveChess)
+Warning; Bestmove does not match beginning of last PV - move g1e2 from SF_2200
+Info; info depth 11 seldepth 17 multipv 1 score cp -37 nodes 102985 nps 509826 hashfull 33 tbhits 0 time 202 pv c2c3 e6e5 f1b5 g8f6 f3e2 a7a6 b5a4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; 
+Warning; Bestmove does not match beginning of last PV - move d2d3 from SF_2200
+Info; info depth 12 seldepth 15 multipv 1 score cp -52 nodes 103840 nps 422113 hashfull 33 tbhits 0 time 246 pv e4d5 e6d5 d2d4 f8e7 c2c3 g8f6 e2g3 e8g8 f1e2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5
+Warning; Bestmove does not match beginning of last PV - move f3g2 from SF_2200
+Info; info depth 12 seldepth 23 multipv 1 score cp -92 nodes 178548 nps 441950 hashfull 56 tbhits 0 time 404 pv h2h3 b7b6 g4g5 d5e4 d3e4 f6d7 f3g3 c6b4 b1a3 c8b7 f1g2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 d2d3 g8f6 g2g4 f8c5
+Warning; Bestmove does not match beginning of last PV - move h2h3 from SF_2200
+Info; info depth 12 seldepth 16 multipv 1 score cp -112 nodes 69714 nps 400655 hashfull 25 tbhits 0 time 174 pv f2f3 c8e6 b1c3 h7h5 g4g5 f6d7 c1d2 d7b6 e1c1 b6c4 c3d5 c4d2 d1d2 e6d5 d2d5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 d2d3 g8f6 g2g4 f8c5 f3g2 d5e4 d3e4 e6e5
+Warning; Bestmove does not match beginning of last PV - move g4g5 from SF_2200
+Info; info depth 13 seldepth 24 multipv 1 score cp -170 nodes 125779 nps 372127 hashfull 49 tbhits 0 time 338 pv e2g3 d8d7 b1c3 e8c8 f2f3 c5d4 c3b5 d4b6 c1g5 a7a6 b5c3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 d2d3 g8f6 g2g4 f8c5 f3g2 d5e4 d3e4 e6e5 h2h3 c8e6
+Warning; Bestmove does not match beginning of last PV - move e4g4 from SF_2200
+Info; info depth 15 seldepth 24 multipv 1 score cp -358 nodes 113501 nps 436542 hashfull 39 tbhits 0 time 260 pv e4a4 d5h1 b1d2 c5e7 e2g3 h1d5 d2e4 d5e4 a4e4 e7g5 g3f5 d8f6 c1g5 f6g5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 d2d3 g8f6 g2g4 f8c5 f3g2 d5e4 d3e4 e6e5 h2h3 c8e6 g4g5 f6e4 g2e4 e6d5
+Warning; Bestmove does not match beginning of last PV - move a2a3 from SF_2200
+Info; info depth 12 seldepth 19 multipv 1 score cp -352 nodes 21395 nps 445729 hashfull 6 tbhits 0 time 48 pv c1e3 c5e3 f2e3 h1d5 b1c3 d5e6 g4g3 h7h5 g5h6 h8h6 g3g7
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 d2d3 g8f6 g2g4 f8c5 f3g2 d5e4 d3e4 e6e5 h2h3 c8e6 g4g5 f6e4 g2e4 e6d5 e4g4 d5h1
+Warning; Bestmove does not match beginning of last PV - move f1g2 from SF_2200
+Info; info depth 12 seldepth 22 multipv 1 score cp -368 nodes 43011 nps 405764 hashfull 12 tbhits 0 time 106 pv b2b4 c5b6 f1g2 e6c4 c1e3 e8c8 g2c6 b7c6 g3g4 e7e6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 d2d3 g8f6 g2g4 f8c5 f3g2 d5e4 d3e4 e6e5 h2h3 c8e6 g4g5 f6e4 g2e4 e6d5 e4g4 d5h1 a2a3 h1d5 b1c3 d5e6 g4g3 d8e7
+Warning; Bestmove does not match beginning of last PV - move b2b4 from SF_2200
+Info; info depth 14 seldepth 20 multipv 1 score cp -371 nodes 79071 nps 446728 hashfull 27 tbhits 0 time 177 pv g2c6 b7c6 c1d2 c8b8 g3e5 e6h3 e5e7 c5e7 e1c1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 d2d3 g8f6 g2g4 f8c5 f3g2 d5e4 d3e4 e6e5 h2h3 c8e6 g4g5 f6e4 g2e4 e6d5 e4g4 d5h1 a2a3 h1d5 b1c3 d5e6 g4g3 d8e7 f1g2 e8c8
+Warning; Bestmove does not match beginning of last PV - move g2b7 from SF_2200
+Info; info depth 12 seldepth 24 multipv 1 score cp -309 nodes 38007 nps 575863 hashfull 12 tbhits 0 time 66 pv b4c5 d4c2 e1f1 c2a1 c5c6 a1b3 c6b7 c8b8 c1e3 e6c4 f1g1 e7e6 g3f3 e5e4 f3g3 c4e2 c3e2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 d2d3 g8f6 g2g4 f8c5 f3g2 d5e4 d3e4 e6e5 h2h3 c8e6 g4g5 f6e4 g2e4 e6d5 e4g4 d5h1 a2a3 h1d5 b1c3 d5e6 g4g3 d8e7 f1g2 e8c8 b2b4 c6d4
+Warning; Bestmove does not match beginning of last PV - move e1f1 from SF_2200
+Info; info depth 15 seldepth 17 multipv 1 score cp -442 nodes 126710 nps 856148 hashfull 52 tbhits 0 time 148 pv g3g2 c7c6 a1b1 c5b6 b4b5 d4c2 e1f1 e6d5 c3d5 c6d5 e2c3 b7a8 c1f4 e7e6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 d2d3 g8f6 g2g4 f8c5 f3g2 d5e4 d3e4 e6e5 h2h3 c8e6 g4g5 f6e4 g2e4 e6d5 e4g4 d5h1 a2a3 h1d5 b1c3 d5e6 g4g3 d8e7 f1g2 e8c8 b2b4 c6d4 g2b7 c8b7
+Warning; Bestmove does not match beginning of last PV - move b4c5 from SF_2200
+Info; info depth 12 seldepth 13 multipv 1 score cp -438 nodes 31771 nps 934441 hashfull 12 tbhits 0 time 34 pv g3f3 c7c6 a1b1 c5b6 b4b5 e6d5 b5c6 d5c6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 d2d3 g8f6 g2g4 f8c5 f3g2 d5e4 d3e4 e6e5 h2h3 c8e6 g4g5 f6e4 g2e4 e6d5 e4g4 d5h1 a2a3 h1d5 b1c3 d5e6 g4g3 d8e7 f1g2 e8c8 b2b4 c6d4 g2b7 c8b7 e1f1 d4c2
+Warning; Bestmove does not match beginning of last PV - move g3h4 from SF_2200
+Info; info depth 14 seldepth 18 multipv 1 score cp -464 nodes 77061 nps 1263295 hashfull 25 tbhits 0 time 61 pv c1b2 e7d6 b2a1 c6d7 f1g2 h7h6 c3e4 d6c6 g3d3 d7e8
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 d2d3 g8f6 g2g4 f8c5 f3g2 d5e4 d3e4 e6e5 h2h3 c8e6 g4g5 f6e4 g2e4 e6d5 e4g4 d5h1 a2a3 h1d5 b1c3 d5e6 g4g3 d8e7 f1g2 e8c8 b2b4 c6d4 g2b7 c8b7 e1f1 d4c2 b4c5 c2a1 c5c6 b7c6
+Warning; Bestmove does not match beginning of last PV - move h4a4 from SF_2200
+Info; info depth 13 seldepth 26 multipv 1 score cp -497 nodes 75246 nps 1297344 hashfull 22 tbhits 0 time 58 pv h4e4 c7c6 c1e3 e7d7 f1g1 a1b3 e2c1 b3d4 e3d4 b7a8 d4e3 d7b7
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 d2d3 g8f6 g2g4 f8c5 f3g2 d5e4 d3e4 e6e5 h2h3 c8e6 g4g5 f6e4 g2e4 e6d5 e4g4 d5h1 a2a3 h1d5 b1c3 d5e6 g4g3 d8e7 f1g2 e8c8 b2b4 c6d4 g2b7 c8b7 e1f1 d4c2 b4c5 c2a1 c5c6 b7c6 g3h4 c6b7
+Warning; Bestmove does not match beginning of last PV - move g1h2 from SF_2200
+Info; info depth 13 seldepth 20 multipv 1 score cp -573 nodes 64862 nps 1271803 hashfull 24 tbhits 0 time 51 pv a4b4 b7a8 b4e4 c7c6 g1h2 d8d7 e4a4 a1b3 c3e4 e6d5 c1e3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 d2d3 g8f6 g2g4 f8c5 f3g2 d5e4 d3e4 e6e5 h2h3 c8e6 g4g5 f6e4 g2e4 e6d5 e4g4 d5h1 a2a3 h1d5 b1c3 d5e6 g4g3 d8e7 f1g2 e8c8 b2b4 c6d4 g2b7 c8b7 e1f1 d4c2 b4c5 c2a1 c5c6 b7c6 g3h4 c6b7 h4a4 e6h3 f1g1 e7e6
+Warning; Bestmove does not match beginning of last PV - move c1b2 from SF_2200
+Info; info depth 13 seldepth 21 multipv 1 score cp -618 nodes 70417 nps 1467020 hashfull 23 tbhits 0 time 48 pv h2g1 e6c6 a4b4 b7a8 g1f1 a1c2 b4e4 c6e4 c3e4 d8d1 f1g2 c2e1 g2h2 e1f3 h2g2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; g1e2 d7d5 d2d3 g8f6 g2g4 f8c5 f3g2 d5e4 d3e4 e6e5 h2h3 c8e6 g4g5 f6e4 g2e4 e6d5 e4g4 d5h1 a2a3 h1d5 b1c3 d5e6 g4g3 d8e7 f1g2 e8c8 b2b4 c6d4 g2b7 c8b7 e1f1 d4c2 b4c5 c2a1 c5c6 b7c6 g3h4 c6b7 h4a4 e6h3 f1g1 e7e6 g1h2 h3f1
+Finished game 6 (SF_2200 vs HiveChess): 0-1 {Black mates}
+Started game 7 of 10 (HiveChess vs SF_2300)
+Warning; Bestmove does not match beginning of last PV - move e6e5 from SF_2300
+Info; info depth 13 seldepth 23 multipv 1 score cp 60 nodes 191300 nps 433786 hashfull 69 tbhits 0 time 441 pv d7d5 d2d3 e6e5 g1f3 g8f6 c2c3 f8e7 e2c2 e8g8 f1e2 h7h6 b1d2 a7a5 e1g1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2
+Warning; Bestmove does not match beginning of last PV - move c5b6 from SF_2300
+Info; info depth 9 seldepth 13 multipv 1 score cp 98 nodes 29334 nps 371316 hashfull 10 tbhits 0 time 79 pv b7b6 d2d3 a7a5 a2a3 e8g8 c1g5 h7h6 g5f6 d8f6 c3d5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 f8c5 b1c3 g8f6 e2c4
+Warning; Bestmove does not match beginning of last PV - move e8g8 from SF_2300
+Info; info depth 12 seldepth 16 multipv 1 score cp 120 nodes 66693 nps 483282 hashfull 20 tbhits 0 time 138 pv f6d5 e4d5 c6e7 c2c3 c7c6 d5c6 b7c6 c4a4 f7f6 d3e2 e8g8
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 f8c5 b1c3 g8f6 e2c4 c5b6 f1d3 d7d6 c3d5
+Warning; Bestmove does not match beginning of last PV - move f8e8 from SF_2300
+Info; info depth 12 seldepth 22 multipv 1 score cp 135 nodes 124906 nps 464334 hashfull 41 tbhits 0 time 269 pv g8h8 d3e2 c8e6 d2d3 c6e7 c1g5 e6d5 e4d5 f6d5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 f8c5 b1c3 g8f6 e2c4 c5b6 f1d3 d7d6 c3d5 e8g8 e1g1
+Warning; Bestmove does not match beginning of last PV - move c7b6 from SF_2300
+Info; info depth 11 seldepth 16 multipv 1 score cp 165 nodes 50315 nps 387038 hashfull 13 tbhits 0 time 130 pv a7b6 b2b4 c8e6 c4c3 d6d5 b4b5 d5e4 b5c6 b7c6 d3e4 f6e4 c3c6 e4c5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 f8c5 b1c3 g8f6 e2c4 c5b6 f1d3 d7d6 c3d5 e8g8 e1g1 f8e8 d5b6
+Warning; Bestmove does not match beginning of last PV - move d8e7 from SF_2300
+Info; info depth 11 seldepth 16 multipv 1 score cp 155 nodes 49685 nps 376401 hashfull 15 tbhits 0 time 132 pv e8e7 g5f3 c8g4 f3e1 c6d4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 f8c5 b1c3 g8f6 e2c4 c5b6 f1d3 d7d6 c3d5 e8g8 e1g1 f8e8 d5b6 c7b6 f3g5
+Warning; Bestmove does not match beginning of last PV - move h7h6 from SF_2300
+Info; info depth 11 seldepth 16 multipv 1 score cp 245 nodes 43555 nps 327481 hashfull 15 tbhits 0 time 133 pv f6h5 g5f3 c8g4 d3e2 h5f4 f1e1 f4e2 c4e2 c6d4 e2d1 g4f3 g2f3 a8c8
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 f8c5 b1c3 g8f6 e2c4 c5b6 f1d3 d7d6 c3d5 e8g8 e1g1 f8e8 d5b6 c7b6 f3g5 d8e7 b2b4
+Warning; Bestmove does not match beginning of last PV - move c8e6 from SF_2300
+Info; info depth 14 seldepth 20 multipv 1 score cp 232 nodes 89783 nps 383688 hashfull 34 tbhits 0 time 234 pv c8g4 b4b5 c6a5 c4b4 g4f3 g2f3 f6h5 g1h1 a8c8 f1g1 e7f6 f3f4 h5f4 c1b2 f4d3 c2d3 f6f3 g1g2 e8e6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 f8c5 b1c3 g8f6 e2c4 c5b6 f1d3 d7d6 c3d5 e8g8 e1g1 f8e8 d5b6 c7b6 f3g5 d8e7 b2b4 h7h6 g5f3
+Warning; Bestmove does not match beginning of last PV - move e6g4 from SF_2300
+Info; info depth 12 seldepth 19 multipv 1 score cp 205 nodes 67150 nps 325970 hashfull 22 tbhits 0 time 206 pv a8c8 c3a3 d6d5 e4d5 f6d5 b4b5 c6b4 c1b2 f7f6 d3e4 b4c2 a3e7 d5e7
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 f8c5 b1c3 g8f6 e2c4 c5b6 f1d3 d7d6 c3d5 e8g8 e1g1 f8e8 d5b6 c7b6 f3g5 d8e7 b2b4 h7h6 g5f3 c8e6 c4c3
+Warning; Bestmove does not match beginning of last PV - move e7g5 from SF_2300
+Info; info depth 12 seldepth 25 multipv 1 score cp 739 nodes 29072 nps 692190 hashfull 7 tbhits 0 time 42 pv h5f4 f2f3 e7g5 g1f2 d6e5 h2h3 g5h4 f2g1 h4g3 g1h1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 f8c5 b1c3 g8f6 e2c4 c5b6 f1d3 d7d6 c3d5 e8g8 e1g1 f8e8 d5b6 c7b6 f3g5 d8e7 b2b4 h7h6 g5f3 c8e6 c4c3 e6g4 c3b2 g4f3 g2f3 c6d4 f3f4 f6h5 f4e5
+Warning; Bestmove does not match beginning of last PV - move h3g5 from SF_2300
+Info; info depth 16 seldepth 22 multipv 1 score mate 11 nodes 25056 nps 659368 hashfull 6 tbhits 0 time 38 pv h3g1 f1h3 g1h3 g3g7 g8g7 e5d6 g7h7 b2g7 h7g7 c1b2 f7f6 b2f6 g7f6 e4e5 f6f5 h1g2 h5g4 g2f1 f3h2 f1e1 e8e5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 f8c5 b1c3 g8f6 e2c4 c5b6 f1d3 d7d6 c3d5 e8g8 e1g1 f8e8 d5b6 c7b6 f3g5 d8e7 b2b4 h7h6 g5f3 c8e6 c4c3 e6g4 c3b2 g4f3 g2f3 c6d4 f3f4 f6h5 f4e5 e7g5 g1h1 h5f4 f1g1 g5h5 d3f1 d4f3 h2h3 f4h3 g1g3
+Warning; Bestmove does not match beginning of last PV - move g8g7 from SF_2300
+Info; info depth 15 seldepth 16 multipv 1 score mate 7 nodes 21855 nps 1150263 hashfull 6 tbhits 0 time 19 pv g8h8 h1g2 h3f4 g2g3 d6e5 b2e5 f3e5 f2f3 h5f3 g3h2 h8g7 c1b2 f3g2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 f8c5 b1c3 g8f6 e2c4 c5b6 f1d3 d7d6 c3d5 e8g8 e1g1 f8e8 d5b6 c7b6 f3g5 d8e7 b2b4 h7h6 g5f3 c8e6 c4c3 e6g4 c3b2 g4f3 g2f3 c6d4 f3f4 f6h5 f4e5 e7g5 g1h1 h5f4 f1g1 g5h5 d3f1 d4f3 h2h3 f4h3 g1g3 h3g5 f1h3 g5h3 g3g7
+Warning; Bestmove does not match beginning of last PV - move a8b8 from SF_2300
+Info; info depth 28 seldepth 4 multipv 1 score mate 2 nodes 18091 nps 3015166 hashfull 1 tbhits 0 time 6 pv g8g7 g3h2 h3f2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 f8c5 b1c3 g8f6 e2c4 c5b6 f1d3 d7d6 c3d5 e8g8 e1g1 f8e8 d5b6 c7b6 f3g5 d8e7 b2b4 h7h6 g5f3 c8e6 c4c3 e6g4 c3b2 g4f3 g2f3 c6d4 f3f4 f6h5 f4e5 e7g5 g1h1 h5f4 f1g1 g5h5 d3f1 d4f3 h2h3 f4h3 g1g3 h3g5 f1h3 g5h3 g3g7 g8g7 e5e6 f7f6 b2f6 g7f6 c1b2 f6e6 h1g2 e8g8 b2g7 f3d2 g2g3
+Warning; Bestmove does not match beginning of last PV - move h3f2 from SF_2300
+Info; info depth 149 seldepth 2 multipv 1 score mate 1 nodes 36816 nps 5259428 hashfull 0 tbhits 0 time 7 pv h3f4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 e6e5 g1f3 f8c5 b1c3 g8f6 e2c4 c5b6 f1d3 d7d6 c3d5 e8g8 e1g1 f8e8 d5b6 c7b6 f3g5 d8e7 b2b4 h7h6 g5f3 c8e6 c4c3 e6g4 c3b2 g4f3 g2f3 c6d4 f3f4 f6h5 f4e5 e7g5 g1h1 h5f4 f1g1 g5h5 d3f1 d4f3 h2h3 f4h3 g1g3 h3g5 f1h3 g5h3 g3g7 g8g7 e5e6 f7f6 b2f6 g7f6 c1b2 f6e6 h1g2 e8g8 b2g7 f3d2 g2g3 a8b8 f2f3 g8g7 g3h2
+Finished game 7 (HiveChess vs SF_2300): 0-1 {Black mates}
+Started game 8 of 10 (SF_2300 vs HiveChess)
+Warning; Bestmove does not match beginning of last PV - move f1b5 from SF_2300
+Info; info depth 13 seldepth 28 multipv 1 score cp -30 nodes 178933 nps 424011 hashfull 61 tbhits 0 time 422 pv e4d5 e6d5 d2d4 g8f6 f1d3 c8g4 f3e3 f8e7 g1e2 e8g8 f2f3 g4h5 e1g1 e7d6 e3f2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5
+Warning; Bestmove does not match beginning of last PV - move b5c6 from SF_2300
+Info; info depth 12 seldepth 20 multipv 1 score cp -49 nodes 97489 nps 433284 hashfull 31 tbhits 0 time 225 pv b5a4 d5e4 f3e4 g8f6 e4e2 b7b5 a4c2 f8d6 d2d3 c6e7
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 f1b5 a7a6
+Warning; Bestmove does not match beginning of last PV - move b1d2 from SF_2300
+Info; info depth 12 seldepth 17 multipv 1 score cp -65 nodes 94277 nps 448938 hashfull 34 tbhits 0 time 210 pv f3e2 e6e5 g1f3 f7f6 d3d4 g8e7 e4d5 c6d5 d4e5 f6e5 f3e5 e8g8 e1g1 f8f5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 f1b5 a7a6 b5c6 b7c6 d2d3 f8d6
+Warning; Bestmove does not match beginning of last PV - move g1e2 from SF_2300
+Info; info depth 12 seldepth 19 multipv 1 score cp -67 nodes 50798 nps 457639 hashfull 11 tbhits 0 time 111 pv f3d1 e6e5 g1f3 e8g8 e1g1 f8e8 f1e1 h7h6 d2f1 a6a5 d3d4 d5e4 f3e5 d6e5 d4e5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 f1b5 a7a6 b5c6 b7c6 d2d3 f8d6 b1d2 g8f6
+Warning; Bestmove does not match beginning of last PV - move b2b3 from SF_2300
+Info; info depth 12 seldepth 18 multipv 1 score cp -49 nodes 59916 nps 468093 hashfull 15 tbhits 0 time 128 pv e1g1 e8g8 h2h3 a6a5 a2a4 f6d7 e4d5 c6d5 f3d5 c8a6 d2e4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 f1b5 a7a6 b5c6 b7c6 d2d3 f8d6 b1d2 g8f6 g1e2 e6e5
+Warning; Bestmove does not match beginning of last PV - move e2g3 from SF_2300
+Info; info depth 11 seldepth 21 multipv 1 score cp -61 nodes 98590 nps 426796 hashfull 34 tbhits 0 time 231 pv e1g1 f8e8 e2g3 a6a5 a2a4 c6c5 e3f3 h7h6 c3c4 d5d4 f3d1 a8a6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 f1b5 a7a6 b5c6 b7c6 d2d3 f8d6 b1d2 g8f6 g1e2 e6e5 b2b3 c8g4 f3e3 e8g8 h2h3 g4e6
+Warning; Bestmove does not match beginning of last PV - move e1g1 from SF_2300
+Info; info depth 12 seldepth 15 multipv 1 score cp -28 nodes 96703 nps 429791 hashfull 32 tbhits 0 time 225 pv d2f3 a6a5 e1g1 a5a4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 f1b5 a7a6 b5c6 b7c6 d2d3 f8d6 b1d2 g8f6 g1e2 e6e5 b2b3 c8g4 f3e3 e8g8 h2h3 g4e6 e2g3 d8d7
+Warning; Bestmove does not match beginning of last PV - move d2f3 from SF_2300
+Info; info depth 8 seldepth 15 multipv 1 score cp -26 nodes 25417 nps 498372 hashfull 4 tbhits 0 time 51 pv e3e2 a6a5 d2f3 a5a4 c1g5 f6e8
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 f1b5 a7a6 b5c6 b7c6 d2d3 f8d6 b1d2 g8f6 g1e2 e6e5 b2b3 c8g4 f3e3 e8g8 h2h3 g4e6 e2g3 d8d7 e1g1 c6c5
+Warning; Bestmove does not match beginning of last PV - move e3e1 from SF_2300
+Info; info depth 10 seldepth 19 multipv 1 score cp -4 nodes 75301 nps 467708 hashfull 25 tbhits 0 time 161 pv e3e2 a6a5 f3g5 a5a4 c3d4 c5d4 f2f4 e5f4 c1f4 d6f4 f1f4 a4b3 f4f6 g7f6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 f1b5 a7a6 b5c6 b7c6 d2d3 f8d6 b1d2 g8f6 g1e2 e6e5 b2b3 c8g4 f3e3 e8g8 h2h3 g4e6 e2g3 d8d7 e1g1 c6c5 d2f3 d5d4
+Warning; Bestmove does not match beginning of last PV - move c3c4 from SF_2300
+Info; info depth 9 seldepth 14 multipv 1 score cp 67 nodes 48127 nps 449785 hashfull 16 tbhits 0 time 107 pv b3b4 d4c3 b4c5 d6c5 e1c3 c5d4 f3d4 d7d4 c3d4 e5d4 c1f4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 f1b5 a7a6 b5c6 b7c6 d2d3 f8d6 b1d2 g8f6 g1e2 e6e5 b2b3 c8g4 f3e3 e8g8 h2h3 g4e6 e2g3 d8d7 e1g1 c6c5 d2f3 d5d4 e3e1 h7h6
+Warning; Bestmove does not match beginning of last PV - move e1e2 from SF_2300
+Info; info depth 11 seldepth 10 multipv 1 score cp 19 nodes 48898 nps 562045 hashfull 8 tbhits 0 time 87 pv f3e5 d6e5 f2f4 e5d6 f4f5 f8e8 f5e6 d7e6 g3f5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 f1b5 a7a6 b5c6 b7c6 d2d3 f8d6 b1d2 g8f6 g1e2 e6e5 b2b3 c8g4 f3e3 e8g8 h2h3 g4e6 e2g3 d8d7 e1g1 c6c5 d2f3 d5d4 e3e1 h7h6 c3c4 a6a5
+Warning; Bestmove does not match beginning of last PV - move e5f6 from SF_2300
+Info; info depth 10 seldepth 11 multipv 1 score cp 14 nodes 24505 nps 875178 hashfull 2 tbhits 0 time 28 pv e5d6 e7d6 d2f4 d6c6 f3c6 d7c6 e1e7 b8b3 e7c7
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 f1b5 a7a6 b5c6 b7c6 d2d3 f8d6 b1d2 g8f6 g1e2 e6e5 b2b3 c8g4 f3e3 e8g8 h2h3 g4e6 e2g3 d8d7 e1g1 c6c5 d2f3 d5d4 e3e1 h7h6 c3c4 a6a5 e1e2 f8b8 f3e5 d6e5 f2f4 e5d6 e4e5 b8e8 c1d2 a5a4 e2f3 a4b3 a2b3 a8a1 f1a1 d7e7 a1e1 e8b8 f4f5 e6d7
+Warning; Bestmove does not match beginning of last PV - move f4g4 from SF_2300
+Info; info depth 10 seldepth 17 multipv 1 score cp -1 nodes 21718 nps 868720 hashfull 2 tbhits 0 time 25 pv g3e4 c6e4 f4e4 g6g5 e4e7 b8b3 e7c7 b3d3 c7c5 d3d2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 f1b5 a7a6 b5c6 b7c6 d2d3 f8d6 b1d2 g8f6 g1e2 e6e5 b2b3 c8g4 f3e3 e8g8 h2h3 g4e6 e2g3 d8d7 e1g1 c6c5 d2f3 d5d4 e3e1 h7h6 c3c4 a6a5 e1e2 f8b8 f3e5 d6e5 f2f4 e5d6 e4e5 b8e8 c1d2 a5a4 e2f3 a4b3 a2b3 a8a1 f1a1 d7e7 a1e1 e8b8 f4f5 e6d7 e5f6 e7f6 e1f1 f6e5 d2f4 e5f4 f3f4 d6f4 f1f4 d7c6 f5f6 g7g6
+Warning; Bestmove does not match beginning of last PV - move g4h4 from SF_2300
+Info; info depth 12 seldepth 14 multipv 1 score cp -160 nodes 25080 nps 1090434 hashfull 59 tbhits 0 time 23 pv g4e4 d3c3 e4e8 g8h7 h3h4 c3c2 f2f3 c2c4 e8f8 c4c3 f3e4 c3e3 e4d5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 f1b5 a7a6 b5c6 b7c6 d2d3 f8d6 b1d2 g8f6 g1e2 e6e5 b2b3 c8g4 f3e3 e8g8 h2h3 g4e6 e2g3 d8d7 e1g1 c6c5 d2f3 d5d4 e3e1 h7h6 c3c4 a6a5 e1e2 f8b8 f3e5 d6e5 f2f4 e5d6 e4e5 b8e8 c1d2 a5a4 e2f3 a4b3 a2b3 a8a1 f1a1 d7e7 a1e1 e8b8 f4f5 e6d7 e5f6 e7f6 e1f1 f6e5 d2f4 e5f4 f3f4 d6f4 f1f4 d7c6 f5f6 g7g6 f4g4 b8b3 g1f2 b3d3 g3e4 c6e4
+Warning; Bestmove does not match beginning of last PV - move f2g1 from SF_2300
+Info; info depth 12 seldepth 28 multipv 1 score cp -774 nodes 49656 nps 1773428 hashfull 39 tbhits 0 time 28 pv f2e1 d2g2 h4f4 d4d3 f4f2 g2f2 e1f2 g6g5 f2e3 g8h7 e3d2 h7g6 d2d3 h6h5 d3e2 g6f6 e2f2 h5h4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 f1b5 a7a6 b5c6 b7c6 d2d3 f8d6 b1d2 g8f6 g1e2 e6e5 b2b3 c8g4 f3e3 e8g8 h2h3 g4e6 e2g3 d8d7 e1g1 c6c5 d2f3 d5d4 e3e1 h7h6 c3c4 a6a5 e1e2 f8b8 f3e5 d6e5 f2f4 e5d6 e4e5 b8e8 c1d2 a5a4 e2f3 a4b3 a2b3 a8a1 f1a1 d7e7 a1e1 e8b8 f4f5 e6d7 e5f6 e7f6 e1f1 f6e5 d2f4 e5f4 f3f4 d6f4 f1f4 d7c6 f5f6 g7g6 f4g4 b8b3 g1f2 b3d3 g3e4 c6e4 g4h4 e4c6 f2g1 d3d1 g1f2 d1d2
+Warning; Bestmove does not match beginning of last PV - move g1h1 from SF_2300
+Info; info depth 12 seldepth 26 multipv 1 score cp -873 nodes 56206 nps 2161769 hashfull 28 tbhits 0 time 26 pv g1f1 d4d3 h4g4 d3d2 g4g2 d2d1q f1f2 d1f3 f2e1 f3g2 e1d1 g8h7 d1e1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 f1b5 a7a6 b5c6 b7c6 d2d3 f8d6 b1d2 g8f6 g1e2 e6e5 b2b3 c8g4 f3e3 e8g8 h2h3 g4e6 e2g3 d8d7 e1g1 c6c5 d2f3 d5d4 e3e1 h7h6 c3c4 a6a5 e1e2 f8b8 f3e5 d6e5 f2f4 e5d6 e4e5 b8e8 c1d2 a5a4 e2f3 a4b3 a2b3 a8a1 f1a1 d7e7 a1e1 e8b8 f4f5 e6d7 e5f6 e7f6 e1f1 f6e5 d2f4 e5f4 f3f4 d6f4 f1f4 d7c6 f5f6 g7g6 f4g4 b8b3 g1f2 b3d3 g3e4 c6e4 g4h4 e4c6 f2g1 d3d1 g1f2 d1d2 f2g1 d2g2
+Warning; Bestmove does not match beginning of last PV - move f2f1 from SF_2300
+Info; info depth 32 seldepth 17 multipv 1 score mate -8 nodes 193073 nps 2443962 hashfull 63 tbhits 0 time 79 pv f2e1 h4h3 e1e2 a4d7 e2f2 d4d3 f2g1 d3d2 g1g2 d2d1q g2f2 h3h2 f2g3 d1g1 g3f3 d7c6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; c2c3 d7d5 f1b5 a7a6 b5c6 b7c6 d2d3 f8d6 b1d2 g8f6 g1e2 e6e5 b2b3 c8g4 f3e3 e8g8 h2h3 g4e6 e2g3 d8d7 e1g1 c6c5 d2f3 d5d4 e3e1 h7h6 c3c4 a6a5 e1e2 f8b8 f3e5 d6e5 f2f4 e5d6 e4e5 b8e8 c1d2 a5a4 e2f3 a4b3 a2b3 a8a1 f1a1 d7e7 a1e1 e8b8 f4f5 e6d7 e5f6 e7f6 e1f1 f6e5 d2f4 e5f4 f3f4 d6f4 f1f4 d7c6 f5f6 g7g6 f4g4 b8b3 g1f2 b3d3 g3e4 c6e4 g4h4 e4c6 f2g1 d3d1 g1f2 d1d2 f2g1 d2g2 g1h1 g2g4 h1h2 g4h4 h2g3 g6g5 g3f2 c6a4
+Finished game 8 (SF_2300 vs HiveChess): 0-1 {Black mates}
+Started game 9 of 10 (HiveChess vs SF_2400)
+Warning; Bestmove does not match beginning of last PV - move d4f5 from SF_2400
+Info; info depth 13 seldepth 22 multipv 1 score cp 116 nodes 136581 nps 418960 hashfull 46 tbhits 0 time 326 pv d4c6 c2c3 f7f6 d3e3 f6e5 f3e5 f8d6 d2d4 c5d4 c3d4 g8h6 e5c6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3
+Warning; Bestmove does not match beginning of last PV - move c5c4 from SF_2400
+Info; info depth 10 seldepth 13 multipv 1 score cp 99 nodes 30734 nps 487841 hashfull 8 tbhits 0 time 63 pv f5e7 d3e2 c8d7 h2h4 h7h5 g4h5 h8h5 d2d3 d8a5 c1d2 a5b6 d2c1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3 d4f5 g2g4
+Warning; Bestmove does not match beginning of last PV - move c8d7 from SF_2400
+Info; info depth 12 seldepth 23 multipv 1 score cp 76 nodes 108720 nps 408721 hashfull 42 tbhits 0 time 266 pv g8e7 b1c3 c8d7 f1d3 e7c6 c1f4 d5d4 c3b5 d8a5 c2c3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3 d4f5 g2g4 c5c4 d3e2 f5h4 d2d3 c4d3 e2d3 h4f3 d3f3
+Warning; Bestmove does not match beginning of last PV - move d8c7 from SF_2400
+Info; info depth 10 seldepth 13 multipv 1 score cp 107 nodes 48769 nps 278680 hashfull 16 tbhits 0 time 175 pv g8e7 f3g3 e7g6 h2h4 d8c7 f2f4 c7c2 b1c3 f8b4 a2a3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3 d4f5 g2g4 c5c4 d3e2 f5h4 d2d3 c4d3 e2d3 h4f3 d3f3 c8d7 f1e2
+Warning; Bestmove does not match beginning of last PV - move c7c8 from SF_2400
+Info; info depth 11 seldepth 17 multipv 1 score cp 67 nodes 86406 nps 407575 hashfull 27 tbhits 0 time 212 pv c7d8 c3g3 h7h5 g4h5 g8e7 c1g5 d8b6 b1d2 e7f5 g3b3 b6c7 b3c3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3 d4f5 g2g4 c5c4 d3e2 f5h4 d2d3 c4d3 e2d3 h4f3 d3f3 c8d7 f1e2 d8c7 f3c3
+Warning; Bestmove does not match beginning of last PV - move c8d8 from SF_2400
+Info; info depth 10 seldepth 10 multipv 1 score cp 46 nodes 48657 nps 523193 hashfull 12 tbhits 0 time 93 pv g8e7 c3c8 a8c8 c2c3 e7g6 f2f4 f8c5 e3c5 c8c5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3 d4f5 g2g4 c5c4 d3e2 f5h4 d2d3 c4d3 e2d3 h4f3 d3f3 c8d7 f1e2 d8c7 f3c3 c7c8 c1e3
+Warning; Bestmove does not match beginning of last PV - move d8c7 from SF_2400
+Info; info depth 11 seldepth 24 multipv 1 score cp 87 nodes 72001 nps 470594 hashfull 27 tbhits 0 time 153 pv b7b5 a3b1 d8a5 b1d2 b5b4 f2f4 g8e7 d2f3 d7a4 e3b6 a4b3 b6a5 c8c2 c1b1 c2e2 a2b3 e7c6 f3d4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3 d4f5 g2g4 c5c4 d3e2 f5h4 d2d3 c4d3 e2d3 h4f3 d3f3 c8d7 f1e2 d8c7 f3c3 c7c8 c1e3 c8d8 b1a3 a7a6 e1c1 a8c8 c3b3
+Warning; Bestmove does not match beginning of last PV - move g8e7 from SF_2400
+Info; info depth 10 seldepth 14 multipv 1 score cp 132 nodes 29213 nps 478901 hashfull 8 tbhits 0 time 61 pv b7b5 c2c3 g8e7 c1b1 e7c6 f2f4 c7b7 d1d2 b5b4 c3b4 f8b4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3 d4f5 g2g4 c5c4 d3e2 f5h4 d2d3 c4d3 e2d3 h4f3 d3f3 c8d7 f1e2 d8c7 f3c3 c7c8 c1e3 c8d8 b1a3 a7a6 e1c1 a8c8 c3b3 d8c7 e3d4
+Warning; Bestmove does not match beginning of last PV - move b4b3 from SF_2400
+Info; info depth 13 seldepth 15 multipv 1 score cp 621 nodes 21615 nps 675468 hashfull 5 tbhits 0 time 32 pv a5c4 d2f2 c4e3 b1c3 b4c3 f2e3 c3b2 c1b2 f8b4 e3b3 c7c3 b3c3 b4c3 b2a3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3 d4f5 g2g4 c5c4 d3e2 f5h4 d2d3 c4d3 e2d3 h4f3 d3f3 c8d7 f1e2 d8c7 f3c3 c7c8 c1e3 c8d8 b1a3 a7a6 e1c1 a8c8 c3b3 d8c7 e3d4 g8e7 f2f4 b7b5 e2f3 e7c6 d4e3 b5b4 a3b1 c6a5 b3d3 d7b5 d3d2
+Warning; Bestmove does not match beginning of last PV - move a5c4 from SF_2400
+Info; info depth 11 seldepth 19 multipv 1 score cp 660 nodes 16117 nps 671541 hashfull 4 tbhits 0 time 24 pv b3a2 g4g5 c7c3 b1c3 a2a1q c1d2 a5c4 d2e2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3 d4f5 g2g4 c5c4 d3e2 f5h4 d2d3 c4d3 e2d3 h4f3 d3f3 c8d7 f1e2 d8c7 f3c3 c7c8 c1e3 c8d8 b1a3 a7a6 e1c1 a8c8 c3b3 d8c7 e3d4 g8e7 f2f4 b7b5 e2f3 e7c6 d4e3 b5b4 a3b1 c6a5 b3d3 d7b5 d3d2 b4b3 d2c3
+Warning; Bestmove does not match beginning of last PV - move c7b8 from SF_2400
+Info; info depth 13 seldepth 22 multipv 1 score cp 515 nodes 23924 nps 478480 hashfull 10 tbhits 0 time 50 pv c7c3 b2c3 c8c3 a3b5 a6b5 f3e2 e8e7 e2b5 h8c8 c1b2 c3c2 d2c2 c8c2 b2b3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3 d4f5 g2g4 c5c4 d3e2 f5h4 d2d3 c4d3 e2d3 h4f3 d3f3 c8d7 f1e2 d8c7 f3c3 c7c8 c1e3 c8d8 b1a3 a7a6 e1c1 a8c8 c3b3 d8c7 e3d4 g8e7 f2f4 b7b5 e2f3 e7c6 d4e3 b5b4 a3b1 c6a5 b3d3 d7b5 d3d2 b4b3 d2c3 a5c4 a2b3 c4e3 d1d2 f8c5 b3b4 c5b6 b1a3
+Warning; Bestmove does not match beginning of last PV - move e3c4 from SF_2400
+Info; info depth 10 seldepth 16 multipv 1 score cp 574 nodes 9284 nps 488631 hashfull 1 tbhits 0 time 19 pv b8a7 d2e2 a7a1 c1d2 a1b2 e2e3 b2b4 d2e2 b4f4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3 d4f5 g2g4 c5c4 d3e2 f5h4 d2d3 c4d3 e2d3 h4f3 d3f3 c8d7 f1e2 d8c7 f3c3 c7c8 c1e3 c8d8 b1a3 a7a6 e1c1 a8c8 c3b3 d8c7 e3d4 g8e7 f2f4 b7b5 e2f3 e7c6 d4e3 b5b4 a3b1 c6a5 b3d3 d7b5 d3d2 b4b3 d2c3 a5c4 a2b3 c4e3 d1d2 f8c5 b3b4 c5b6 b1a3 c7b8 c3b3 e8g8 a3b5 a6b5 b3d3
+Warning; Bestmove does not match beginning of last PV - move f8d8 from SF_2400
+Info; info depth 13 seldepth 14 multipv 1 score cp 535 nodes 21269 nps 518756 hashfull 5 tbhits 0 time 41 pv b8a7 c2c3 f8d8 c1b1 d5d4 f3e4 d4c3 d3c3 g7g6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3 d4f5 g2g4 c5c4 d3e2 f5h4 d2d3 c4d3 e2d3 h4f3 d3f3 c8d7 f1e2 d8c7 f3c3 c7c8 c1e3 c8d8 b1a3 a7a6 e1c1 a8c8 c3b3 d8c7 e3d4 g8e7 f2f4 b7b5 e2f3 e7c6 d4e3 b5b4 a3b1 c6a5 b3d3 d7b5 d3d2 b4b3 d2c3 a5c4 a2b3 c4e3 d1d2 f8c5 b3b4 c5b6 b1a3 c7b8 c3b3 e8g8 a3b5 a6b5 b3d3 e3c4 d2e2
+Warning; Bestmove does not match beginning of last PV - move a7a3 from SF_2400
+Info; info depth 14 seldepth 4 multipv 1 score mate 2 nodes 29069 nps 1162760 hashfull 24 tbhits 0 time 25 pv c8a8 d1d3 a7a1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3 d4f5 g2g4 c5c4 d3e2 f5h4 d2d3 c4d3 e2d3 h4f3 d3f3 c8d7 f1e2 d8c7 f3c3 c7c8 c1e3 c8d8 b1a3 a7a6 e1c1 a8c8 c3b3 d8c7 e3d4 g8e7 f2f4 b7b5 e2f3 e7c6 d4e3 b5b4 a3b1 c6a5 b3d3 d7b5 d3d2 b4b3 d2c3 a5c4 a2b3 c4e3 d1d2 f8c5 b3b4 c5b6 b1a3 c7b8 c3b3 e8g8 a3b5 a6b5 b3d3 e3c4 d2e2 f8d8 b2b3 b8a7 b3c4 b5c4 d3d1 c4c3 c1b1
+Warning; Bestmove does not match beginning of last PV - move b4a4 from SF_2400
+Info; info depth 15 seldepth 4 multipv 1 score mate 2 nodes 9034 nps 1505666 hashfull 7 tbhits 0 time 6 pv c8a8 c1a3 a8a3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3 d4f5 g2g4 c5c4 d3e2 f5h4 d2d3 c4d3 e2d3 h4f3 d3f3 c8d7 f1e2 d8c7 f3c3 c7c8 c1e3 c8d8 b1a3 a7a6 e1c1 a8c8 c3b3 d8c7 e3d4 g8e7 f2f4 b7b5 e2f3 e7c6 d4e3 b5b4 a3b1 c6a5 b3d3 d7b5 d3d2 b4b3 d2c3 a5c4 a2b3 c4e3 d1d2 f8c5 b3b4 c5b6 b1a3 c7b8 c3b3 e8g8 a3b5 a6b5 b3d3 e3c4 d2e2 f8d8 b2b3 b8a7 b3c4 b5c4 d3d1 c4c3 c1b1 a7a3 d1c1 a3b4 b1a1
+Warning; Bestmove does not match beginning of last PV - move b5c4 from SF_2400
+Info; info depth 11 seldepth 4 multipv 1 score mate 2 nodes 11669 nps 1060818 hashfull 43 tbhits 0 time 11 pv c8a8 c1a3 b5b2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3 d4f5 g2g4 c5c4 d3e2 f5h4 d2d3 c4d3 e2d3 h4f3 d3f3 c8d7 f1e2 d8c7 f3c3 c7c8 c1e3 c8d8 b1a3 a7a6 e1c1 a8c8 c3b3 d8c7 e3d4 g8e7 f2f4 b7b5 e2f3 e7c6 d4e3 b5b4 a3b1 c6a5 b3d3 d7b5 d3d2 b4b3 d2c3 a5c4 a2b3 c4e3 d1d2 f8c5 b3b4 c5b6 b1a3 c7b8 c3b3 e8g8 a3b5 a6b5 b3d3 e3c4 d2e2 f8d8 b2b3 b8a7 b3c4 b5c4 d3d1 c4c3 c1b1 a7a3 d1c1 a3b4 b1a1 b4a4 a1b1 a4b5 b1a2
+Warning; Bestmove does not match beginning of last PV - move c8c5 from SF_2400
+Info; info depth 51 seldepth 4 multipv 1 score mate 2 nodes 134880 nps 2013134 hashfull 42 tbhits 0 time 67 pv c8a8 c1a3 a8a3
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3 d4f5 g2g4 c5c4 d3e2 f5h4 d2d3 c4d3 e2d3 h4f3 d3f3 c8d7 f1e2 d8c7 f3c3 c7c8 c1e3 c8d8 b1a3 a7a6 e1c1 a8c8 c3b3 d8c7 e3d4 g8e7 f2f4 b7b5 e2f3 e7c6 d4e3 b5b4 a3b1 c6a5 b3d3 d7b5 d3d2 b4b3 d2c3 a5c4 a2b3 c4e3 d1d2 f8c5 b3b4 c5b6 b1a3 c7b8 c3b3 e8g8 a3b5 a6b5 b3d3 e3c4 d2e2 f8d8 b2b3 b8a7 b3c4 b5c4 d3d1 c4c3 c1b1 a7a3 d1c1 a3b4 b1a1 b4a4 a1b1 a4b5 b1a2 b5c4 a2b1 c4b4 b1a1
+Warning; Bestmove does not match beginning of last PV - move e6d5 from SF_2400
+Info; info depth 60 seldepth 6 multipv 1 score mate 3 nodes 197569 nps 2439123 hashfull 19 tbhits 0 time 81 pv c5d5 c1b1 d8a8 b1a2 b4b2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3 d4f5 g2g4 c5c4 d3e2 f5h4 d2d3 c4d3 e2d3 h4f3 d3f3 c8d7 f1e2 d8c7 f3c3 c7c8 c1e3 c8d8 b1a3 a7a6 e1c1 a8c8 c3b3 d8c7 e3d4 g8e7 f2f4 b7b5 e2f3 e7c6 d4e3 b5b4 a3b1 c6a5 b3d3 d7b5 d3d2 b4b3 d2c3 a5c4 a2b3 c4e3 d1d2 f8c5 b3b4 c5b6 b1a3 c7b8 c3b3 e8g8 a3b5 a6b5 b3d3 e3c4 d2e2 f8d8 b2b3 b8a7 b3c4 b5c4 d3d1 c4c3 c1b1 a7a3 d1c1 a3b4 b1a1 b4a4 a1b1 a4b5 b1a2 b5c4 a2b1 c4b4 b1a1 c8c5 f3d5
+Warning; Bestmove does not match beginning of last PV - move c5a5 from SF_2400
+Info; info depth 86 seldepth 4 multipv 1 score mate 2 nodes 260653 nps 3341705 hashfull 29 tbhits 0 time 78 pv d8a8 b1a2 b4b2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3 d4f5 g2g4 c5c4 d3e2 f5h4 d2d3 c4d3 e2d3 h4f3 d3f3 c8d7 f1e2 d8c7 f3c3 c7c8 c1e3 c8d8 b1a3 a7a6 e1c1 a8c8 c3b3 d8c7 e3d4 g8e7 f2f4 b7b5 e2f3 e7c6 d4e3 b5b4 a3b1 c6a5 b3d3 d7b5 d3d2 b4b3 d2c3 a5c4 a2b3 c4e3 d1d2 f8c5 b3b4 c5b6 b1a3 c7b8 c3b3 e8g8 a3b5 a6b5 b3d3 e3c4 d2e2 f8d8 b2b3 b8a7 b3c4 b5c4 d3d1 c4c3 c1b1 a7a3 d1c1 a3b4 b1a1 b4a4 a1b1 a4b5 b1a2 b5c4 a2b1 c4b4 b1a1 c8c5 f3d5 e6d5 c1b1
+Warning; Bestmove does not match beginning of last PV - move a5a2 from SF_2400
+Info; info depth 245 seldepth 2 multipv 1 score mate 1 nodes 73164 nps 5226000 hashfull 10 tbhits 0 time 14 pv b4b2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3 d4f5 g2g4 c5c4 d3e2 f5h4 d2d3 c4d3 e2d3 h4f3 d3f3 c8d7 f1e2 d8c7 f3c3 c7c8 c1e3 c8d8 b1a3 a7a6 e1c1 a8c8 c3b3 d8c7 e3d4 g8e7 f2f4 b7b5 e2f3 e7c6 d4e3 b5b4 a3b1 c6a5 b3d3 d7b5 d3d2 b4b3 d2c3 a5c4 a2b3 c4e3 d1d2 f8c5 b3b4 c5b6 b1a3 c7b8 c3b3 e8g8 a3b5 a6b5 b3d3 e3c4 d2e2 f8d8 b2b3 b8a7 b3c4 b5c4 d3d1 c4c3 c1b1 a7a3 d1c1 a3b4 b1a1 b4a4 a1b1 a4b5 b1a2 b5c4 a2b1 c4b4 b1a1 c8c5 f3d5 e6d5 c1b1 c5a5 b1a2
+Warning; Bestmove does not match beginning of last PV - move d8a8 from SF_2400
+Info; info depth 245 seldepth 2 multipv 1 score mate 1 nodes 63040 nps 5730909 hashfull 10 tbhits 0 time 11 pv b4b2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; f3e2 d7d5 e4e5 c6d4 e2d3 c7c5 g1f3 d4f5 g2g4 c5c4 d3e2 f5h4 d2d3 c4d3 e2d3 h4f3 d3f3 c8d7 f1e2 d8c7 f3c3 c7c8 c1e3 c8d8 b1a3 a7a6 e1c1 a8c8 c3b3 d8c7 e3d4 g8e7 f2f4 b7b5 e2f3 e7c6 d4e3 b5b4 a3b1 c6a5 b3d3 d7b5 d3d2 b4b3 d2c3 a5c4 a2b3 c4e3 d1d2 f8c5 b3b4 c5b6 b1a3 c7b8 c3b3 e8g8 a3b5 a6b5 b3d3 e3c4 d2e2 f8d8 b2b3 b8a7 b3c4 b5c4 d3d1 c4c3 c1b1 a7a3 d1c1 a3b4 b1a1 b4a4 a1b1 a4b5 b1a2 b5c4 a2b1 c4b4 b1a1 c8c5 f3d5 e6d5 c1b1 c5a5 b1a2 a5a2 a1a2
+Finished game 9 (HiveChess vs SF_2400): 0-1 {Black mates}
+Started game 10 of 10 (SF_2400 vs HiveChess)
+Warning; Bestmove does not match beginning of last PV - move b1c3 from SF_2400
+Info; info depth 11 seldepth 17 multipv 1 score cp -37 nodes 102985 nps 465995 hashfull 33 tbhits 0 time 221 pv c2c3 e6e5 f1b5 g8f6 f3e2 a7a6 b5a4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; 
+Warning; Bestmove does not match beginning of last PV - move f3e2 from SF_2400
+Info; info depth 12 seldepth 19 multipv 1 score cp -57 nodes 174811 nps 415228 hashfull 62 tbhits 0 time 421 pv a2a3 c6d4 f3d1 e6e5 g1f3 d7d5 e4d5 f6d5 f3d4 e5d4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6
+Warning; Bestmove does not match beginning of last PV - move a2a3 from SF_2400
+Info; info depth 11 seldepth 22 multipv 1 score cp -55 nodes 80233 nps 471958 hashfull 25 tbhits 0 time 170 pv g1f3 f8e7 c3d5 e8g8 c2c3 f8e8 d2d3 f6d5 e4d5 c6b8 e2c2 a7a5 f1e2 d7d6 e1g1 c8f5 f1e1
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6 f3e2 e6e5
+Warning; Bestmove does not match beginning of last PV - move b1d2 from SF_2400
+Info; info depth 11 seldepth 19 multipv 1 score cp -21 nodes 110792 nps 441402 hashfull 39 tbhits 0 time 251 pv e1g1 b7b5 b1d2 a7a5 a3a4 b5b4 d2c4 f6d7
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6 f3e2 e6e5 a2a3 c6d4 e2d1 d7d5 d2d3 f8e7 f1e2 d4e2 g1e2 d5d4 c3b1 e8g8
+Warning; Bestmove does not match beginning of last PV - move b2b3 from SF_2400
+Info; info depth 11 seldepth 22 multipv 1 score cp -2 nodes 57354 nps 412618 hashfull 16 tbhits 0 time 139 pv a3a4 c7c5 b2b3 f6d7 d2c4 d6c7 f2f4 f7f5 e4f5 f8f5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6 f3e2 e6e5 a2a3 c6d4 e2d1 d7d5 d2d3 f8e7 f1e2 d4e2 g1e2 d5d4 c3b1 e8g8 b1d2 c8e6 e1g1 e7d6
+Warning; Bestmove does not match beginning of last PV - move h2h3 from SF_2400
+Info; info depth 10 seldepth 11 multipv 1 score cp 10 nodes 32255 nps 503984 hashfull 8 tbhits 0 time 64 pv a3a4 b5b4 h2h3 f6d7 f2f4 f7f5 e4f5 e6f5 d2c4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6 f3e2 e6e5 a2a3 c6d4 e2d1 d7d5 d2d3 f8e7 f1e2 d4e2 g1e2 d5d4 c3b1 e8g8 b1d2 c8e6 e1g1 e7d6 b2b3 b7b5
+Warning; Bestmove does not match beginning of last PV - move c1b2 from SF_2400
+Info; info depth 11 seldepth 15 multipv 1 score cp 97 nodes 74213 nps 458104 hashfull 20 tbhits 0 time 162 pv f2f4 e5f4 e2f4 b5a4 a1a4 c7c5 f4e6 f7e6 d2c4 d6c7 a4a6 f6d7 f1f8 d7f8
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6 f3e2 e6e5 a2a3 c6d4 e2d1 d7d5 d2d3 f8e7 f1e2 d4e2 g1e2 d5d4 c3b1 e8g8 b1d2 c8e6 e1g1 e7d6 b2b3 b7b5 h2h3 d8d7 a3a4 d7e8
+Warning; Bestmove does not match beginning of last PV - move b2c1 from SF_2400
+Info; info depth 8 seldepth 9 multipv 1 score cp 47 nodes 22188 nps 672363 hashfull 6 tbhits 0 time 33 pv e2f4 d6f4 f1f4 f6d7 d1h5 b5b8 f4f1 a7a5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6 f3e2 e6e5 a2a3 c6d4 e2d1 d7d5 d2d3 f8e7 f1e2 d4e2 g1e2 d5d4 c3b1 e8g8 b1d2 c8e6 e1g1 e7d6 b2b3 b7b5 h2h3 d8d7 a3a4 d7e8 c1b2 c7c5 a4b5 e8b5 f2f4 e5f4
+Warning; Bestmove does not match beginning of last PV - move h4h6 from SF_2400
+Info; info depth 10 seldepth 11 multipv 1 score cp 252 nodes 8949 nps 559312 hashfull 3 tbhits 0 time 16 pv c1f4 c7f4 e2f4 a7a5 h4h6 g8h8
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6 f3e2 e6e5 a2a3 c6d4 e2d1 d7d5 d2d3 f8e7 f1e2 d4e2 g1e2 d5d4 c3b1 e8g8 b1d2 c8e6 e1g1 e7d6 b2b3 b7b5 h2h3 d8d7 a3a4 d7e8 c1b2 c7c5 a4b5 e8b5 f2f4 e5f4 b2c1 b5b8 a1a6 d6c7 d2f3 f8e8 d1e1 e6d7 a6f6 g7f6 e1h4 b8d8
+Warning; Bestmove does not match beginning of last PV - move h6h5 from SF_2400
+Info; info depth 10 seldepth 15 multipv 1 score cp 173 nodes 21574 nps 479422 hashfull 5 tbhits 0 time 45 pv e2f4 d6f4 c1f4 d8e7 f3h2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6 f3e2 e6e5 a2a3 c6d4 e2d1 d7d5 d2d3 f8e7 f1e2 d4e2 g1e2 d5d4 c3b1 e8g8 b1d2 c8e6 e1g1 e7d6 b2b3 b7b5 h2h3 d8d7 a3a4 d7e8 c1b2 c7c5 a4b5 e8b5 f2f4 e5f4 b2c1 b5b8 a1a6 d6c7 d2f3 f8e8 d1e1 e6d7 a6f6 g7f6 e1h4 b8d8 h4h6 c7d6
+Warning; Bestmove does not match beginning of last PV - move f3d2 from SF_2400
+Info; info depth 9 seldepth 13 multipv 1 score cp 394 nodes 8805 nps 517941 hashfull 3 tbhits 0 time 17 pv f4c7 b6c7 f3g5 f6g5 f1f7 h7h6 h5g6 g8h8 g6h6 h8g8
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6 f3e2 e6e5 a2a3 c6d4 e2d1 d7d5 d2d3 f8e7 f1e2 d4e2 g1e2 d5d4 c3b1 e8g8 b1d2 c8e6 e1g1 e7d6 b2b3 b7b5 h2h3 d8d7 a3a4 d7e8 c1b2 c7c5 a4b5 e8b5 f2f4 e5f4 b2c1 b5b8 a1a6 d6c7 d2f3 f8e8 d1e1 e6d7 a6f6 g7f6 e1h4 b8d8 h4h6 c7d6 h6h5 d8b6 c1f4 d6c7
+Warning; Bestmove does not match beginning of last PV - move f4c7 from SF_2400
+Info; info depth 10 seldepth 11 multipv 1 score cp 282 nodes 17809 nps 434365 hashfull 5 tbhits 0 time 41 pv d2c4 b6c6 f4c7 c8c7 e2f4 f6f5 f4d5
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6 f3e2 e6e5 a2a3 c6d4 e2d1 d7d5 d2d3 f8e7 f1e2 d4e2 g1e2 d5d4 c3b1 e8g8 b1d2 c8e6 e1g1 e7d6 b2b3 b7b5 h2h3 d8d7 a3a4 d7e8 c1b2 c7c5 a4b5 e8b5 f2f4 e5f4 b2c1 b5b8 a1a6 d6c7 d2f3 f8e8 d1e1 e6d7 a6f6 g7f6 e1h4 b8d8 h4h6 c7d6 h6h5 d8b6 c1f4 d6c7 f3d2 a8c8
+Warning; Bestmove does not match beginning of last PV - move f4d5 from SF_2400
+Info; info depth 9 seldepth 14 multipv 1 score cp 284 nodes 13956 nps 387666 hashfull 3 tbhits 0 time 36 pv h5h4 f6f5 h4g3 g8f8 e4f5 c6h6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6 f3e2 e6e5 a2a3 c6d4 e2d1 d7d5 d2d3 f8e7 f1e2 d4e2 g1e2 d5d4 c3b1 e8g8 b1d2 c8e6 e1g1 e7d6 b2b3 b7b5 h2h3 d8d7 a3a4 d7e8 c1b2 c7c5 a4b5 e8b5 f2f4 e5f4 b2c1 b5b8 a1a6 d6c7 d2f3 f8e8 d1e1 e6d7 a6f6 g7f6 e1h4 b8d8 h4h6 c7d6 h6h5 d8b6 c1f4 d6c7 f3d2 a8c8 f4c7 c8c7 d2c4 b6a6 e2f4 c7c6
+Warning; Bestmove does not match beginning of last PV - move b3b4 from SF_2400
+Info; info depth 11 seldepth 13 multipv 1 score cp 266 nodes 16478 nps 531548 hashfull 5 tbhits 0 time 31 pv h5h4 g8h8 h4f4 e8e2 f4g4 e2e8 g4h4 e8g8 f1e1 g8g7 d5e7 c6c7
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6 f3e2 e6e5 a2a3 c6d4 e2d1 d7d5 d2d3 f8e7 f1e2 d4e2 g1e2 d5d4 c3b1 e8g8 b1d2 c8e6 e1g1 e7d6 b2b3 b7b5 h2h3 d8d7 a3a4 d7e8 c1b2 c7c5 a4b5 e8b5 f2f4 e5f4 b2c1 b5b8 a1a6 d6c7 d2f3 f8e8 d1e1 e6d7 a6f6 g7f6 e1h4 b8d8 h4h6 c7d6 h6h5 d8b6 c1f4 d6c7 f3d2 a8c8 f4c7 c8c7 d2c4 b6a6 e2f4 c7c6 f4d5 f6f5 e4f5 f7f6
+Warning; Bestmove does not match beginning of last PV - move g1h2 from SF_2400
+Info; info depth 11 seldepth 12 multipv 1 score cp 353 nodes 15285 nps 527068 hashfull 28 tbhits 0 time 29 pv h5h6 c5b4 d5f6 g8f7 h6h7 f7f6 h7d7
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6 f3e2 e6e5 a2a3 c6d4 e2d1 d7d5 d2d3 f8e7 f1e2 d4e2 g1e2 d5d4 c3b1 e8g8 b1d2 c8e6 e1g1 e7d6 b2b3 b7b5 h2h3 d8d7 a3a4 d7e8 c1b2 c7c5 a4b5 e8b5 f2f4 e5f4 b2c1 b5b8 a1a6 d6c7 d2f3 f8e8 d1e1 e6d7 a6f6 g7f6 e1h4 b8d8 h4h6 c7d6 h6h5 d8b6 c1f4 d6c7 f3d2 a8c8 f4c7 c8c7 d2c4 b6a6 e2f4 c7c6 f4d5 f6f5 e4f5 f7f6 b3b4 a6a4
+Warning; Bestmove does not match beginning of last PV - move h5h4 from SF_2400
+Info; info depth 10 seldepth 15 multipv 1 score cp 290 nodes 15549 nps 575888 hashfull 57 tbhits 0 time 27 pv f1f4
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6 f3e2 e6e5 a2a3 c6d4 e2d1 d7d5 d2d3 f8e7 f1e2 d4e2 g1e2 d5d4 c3b1 e8g8 b1d2 c8e6 e1g1 e7d6 b2b3 b7b5 h2h3 d8d7 a3a4 d7e8 c1b2 c7c5 a4b5 e8b5 f2f4 e5f4 b2c1 b5b8 a1a6 d6c7 d2f3 f8e8 d1e1 e6d7 a6f6 g7f6 e1h4 b8d8 h4h6 c7d6 h6h5 d8b6 c1f4 d6c7 f3d2 a8c8 f4c7 c8c7 d2c4 b6a6 e2f4 c7c6 f4d5 f6f5 e4f5 f7f6 b3b4 a6a4 g1h2 a4b5
+Warning; Bestmove does not match beginning of last PV - move h2g1 from SF_2400
+Info; info depth 9 seldepth 16 multipv 1 score cp 453 nodes 7973 nps 442944 hashfull 46 tbhits 0 time 18 pv h2h1 e8e7 f6h5 e7f7 b4c5 c6h6 h4d4 h8g8 d4g4 g8h8 c4d6 h6d6 c5d6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6 f3e2 e6e5 a2a3 c6d4 e2d1 d7d5 d2d3 f8e7 f1e2 d4e2 g1e2 d5d4 c3b1 e8g8 b1d2 c8e6 e1g1 e7d6 b2b3 b7b5 h2h3 d8d7 a3a4 d7e8 c1b2 c7c5 a4b5 e8b5 f2f4 e5f4 b2c1 b5b8 a1a6 d6c7 d2f3 f8e8 d1e1 e6d7 a6f6 g7f6 e1h4 b8d8 h4h6 c7d6 h6h5 d8b6 c1f4 d6c7 f3d2 a8c8 f4c7 c8c7 d2c4 b6a6 e2f4 c7c6 f4d5 f6f5 e4f5 f7f6 b3b4 a6a4 g1h2 a4b5 h5h4 g8h8 d5f6 b5b8
+Warning; Bestmove does not match beginning of last PV - move f6h5 from SF_2400
+Info; info depth 11 seldepth 13 multipv 1 score cp 495 nodes 12141 nps 551863 hashfull 31 tbhits 0 time 22 pv b4c5 c6c5 h4d4 c5c4 d3c4 b8e5 d4e5 e7e5 f6d7 e5e7 d7c5 e7e2
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6 f3e2 e6e5 a2a3 c6d4 e2d1 d7d5 d2d3 f8e7 f1e2 d4e2 g1e2 d5d4 c3b1 e8g8 b1d2 c8e6 e1g1 e7d6 b2b3 b7b5 h2h3 d8d7 a3a4 d7e8 c1b2 c7c5 a4b5 e8b5 f2f4 e5f4 b2c1 b5b8 a1a6 d6c7 d2f3 f8e8 d1e1 e6d7 a6f6 g7f6 e1h4 b8d8 h4h6 c7d6 h6h5 d8b6 c1f4 d6c7 f3d2 a8c8 f4c7 c8c7 d2c4 b6a6 e2f4 c7c6 f4d5 f6f5 e4f5 f7f6 b3b4 a6a4 g1h2 a4b5 h5h4 g8h8 d5f6 b5b8 h2g1 e8e7
+Warning; Bestmove does not match beginning of last PV - move g5g6 from SF_2400
+Info; info depth 17 seldepth 26 multipv 1 score mate 13 nodes 210499 nps 771058 hashfull 87 tbhits 0 time 273 pv g5h6 h8g8 h6g6 g8f8 g6h6 f8g8 f1f5 f7b7 f5g5 e8g6 g5g6 g8f7 g6g7 f7e6 f6f7 e6e5 g7g5 d8g5 h6d6 e5f5 f7f8q b7f7 f8f7 g5f6 d6f6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6 f3e2 e6e5 a2a3 c6d4 e2d1 d7d5 d2d3 f8e7 f1e2 d4e2 g1e2 d5d4 c3b1 e8g8 b1d2 c8e6 e1g1 e7d6 b2b3 b7b5 h2h3 d8d7 a3a4 d7e8 c1b2 c7c5 a4b5 e8b5 f2f4 e5f4 b2c1 b5b8 a1a6 d6c7 d2f3 f8e8 d1e1 e6d7 a6f6 g7f6 e1h4 b8d8 h4h6 c7d6 h6h5 d8b6 c1f4 d6c7 f3d2 a8c8 f4c7 c8c7 d2c4 b6a6 e2f4 c7c6 f4d5 f6f5 e4f5 f7f6 b3b4 a6a4 g1h2 a4b5 h5h4 g8h8 d5f6 b5b8 h2g1 e8e7 f6h5 b8d8 b4c5 d7e8 c4e5 c6h6 f5f6 e7f7 h4g5 h6g6 e5g6 h7g6
+Warning; Bestmove does not match beginning of last PV - move f1e1 from SF_2400
+Info; info depth 17 seldepth 22 multipv 1 score cp 1027 nodes 755722 nps 1270121 hashfull 263 tbhits 0 time 595 pv g6h6 h8g8 f1f5 b8b1 g1h2 b1c1 h6c1 g8h7 c1g5 e8d7 h5f4 d7f5 g5f5 h7g8 f5g6 g8f8 c5c6 f7f6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6 f3e2 e6e5 a2a3 c6d4 e2d1 d7d5 d2d3 f8e7 f1e2 d4e2 g1e2 d5d4 c3b1 e8g8 b1d2 c8e6 e1g1 e7d6 b2b3 b7b5 h2h3 d8d7 a3a4 d7e8 c1b2 c7c5 a4b5 e8b5 f2f4 e5f4 b2c1 b5b8 a1a6 d6c7 d2f3 f8e8 d1e1 e6d7 a6f6 g7f6 e1h4 b8d8 h4h6 c7d6 h6h5 d8b6 c1f4 d6c7 f3d2 a8c8 f4c7 c8c7 d2c4 b6a6 e2f4 c7c6 f4d5 f6f5 e4f5 f7f6 b3b4 a6a4 g1h2 a4b5 h5h4 g8h8 d5f6 b5b8 h2g1 e8e7 f6h5 b8d8 b4c5 d7e8 c4e5 c6h6 f5f6 e7f7 h4g5 h6g6 e5g6 h7g6 g5g6 d8b8
+Warning; Bestmove does not match beginning of last PV - move e1e4 from SF_2400
+Info; info depth 17 seldepth 22 multipv 1 score mate 11 nodes 164529 nps 1523416 hashfull 64 tbhits 0 time 108 pv g6h6 h8g8 e1e5 f7b7 e5g5 e8g6 g5g6 g8f7 g6g7 f7e6 f6f7 e6e5 g7g5 d8g5 h6d6 e5f5 f7f8q b7f7 f8f7 g5f6 d6f6
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6 f3e2 e6e5 a2a3 c6d4 e2d1 d7d5 d2d3 f8e7 f1e2 d4e2 g1e2 d5d4 c3b1 e8g8 b1d2 c8e6 e1g1 e7d6 b2b3 b7b5 h2h3 d8d7 a3a4 d7e8 c1b2 c7c5 a4b5 e8b5 f2f4 e5f4 b2c1 b5b8 a1a6 d6c7 d2f3 f8e8 d1e1 e6d7 a6f6 g7f6 e1h4 b8d8 h4h6 c7d6 h6h5 d8b6 c1f4 d6c7 f3d2 a8c8 f4c7 c8c7 d2c4 b6a6 e2f4 c7c6 f4d5 f6f5 e4f5 f7f6 b3b4 a6a4 g1h2 a4b5 h5h4 g8h8 d5f6 b5b8 h2g1 e8e7 f6h5 b8d8 b4c5 d7e8 c4e5 c6h6 f5f6 e7f7 h4g5 h6g6 e5g6 h7g6 g5g6 d8b8 f1e1 b8d8
+Warning; Bestmove does not match beginning of last PV - move h5f4 from SF_2400
+Info; info depth 22 seldepth 10 multipv 1 score mate 5 nodes 60782 nps 1105127 hashfull 23 tbhits 0 time 55 pv g6h6 h8g8 e4e5 f7h7 f6f7 e8f7 h5f6 g8h8 h6h7
+Position; fen r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 0 1
+Moves; b1c3 g8f6 f3e2 e6e5 a2a3 c6d4 e2d1 d7d5 d2d3 f8e7 f1e2 d4e2 g1e2 d5d4 c3b1 e8g8 b1d2 c8e6 e1g1 e7d6 b2b3 b7b5 h2h3 d8d7 a3a4 d7e8 c1b2 c7c5 a4b5 e8b5 f2f4 e5f4 b2c1 b5b8 a1a6 d6c7 d2f3 f8e8 d1e1 e6d7 a6f6 g7f6 e1h4 b8d8 h4h6 c7d6 h6h5 d8b6 c1f4 d6c7 f3d2 a8c8 f4c7 c8c7 d2c4 b6a6 e2f4 c7c6 f4d5 f6f5 e4f5 f7f6 b3b4 a6a4 g1h2 a4b5 h5h4 g8h8 d5f6 b5b8 h2g1 e8e7 f6h5 b8d8 b4c5 d7e8 c4e5 c6h6 f5f6 e7f7 h4g5 h6g6 e5g6 h7g6 g5g6 d8b8 f1e1 b8d8 e1e4 d8c8
+Finished game 10 (SF_2400 vs HiveChess): 1-0 {White mates}
+--------------------------------------------------
+Rank Name                             Elo        +/-       nElo        +/-      Games      Score       Draw           Ptnml(0-2)
+   1 SF_2400                          inf        nan        inf        nan          2     100.0%       0.0%      [0, 0, 0, 0, 1]
+   2 HiveChess                      -0.00     217.03       0.00     215.34         10      50.0%      60.0%      [1, 0, 3, 0, 1]
+   3 SF_2100                        -0.00       0.00        nan        nan          2      50.0%     100.0%      [0, 0, 1, 0, 0]
+   4 SF_2200                        -0.00       0.00        nan        nan          2      50.0%     100.0%      [0, 0, 1, 0, 0]
+   5 SF_2300                        -0.00       0.00        nan        nan          2      50.0%     100.0%      [0, 0, 1, 0, 0]
+   6 SF_2000                         -inf        nan       -inf        nan          2       0.0%       0.0%      [1, 0, 0, 0, 0]
+--------------------------------------------------
+Finished match
+Total Time: 00:03:30 (hours:minutes:seconds)
+
+Computing ELO...
+elo: 2200.0
+games_played: 10
+score_pct: 0.500
+total_wins: 5
+total_draws: 0
+total_losses: 5
+ci_95: 232.1
+
+Per-opponent breakdown:
+  vs SF_2000 (2000): +2 =0 -0 [1.000]
+  vs SF_2100 (2100): +1 =0 -1 [0.500]
+  vs SF_2200 (2200): +1 =0 -1 [0.500]
+  vs SF_2300 (2300): +1 =0 -1 [0.500]
+  vs SF_2400 (2400): +0 =0 -2 [0.000]
+---
+elo:              2200.0
+games_played:     10
+score_pct:        0.500
+wins:             5
+draws:            0
+losses:           5
+binary_bytes:     1426544
+line_count:       2521
+compile_secs:     0
+valid:            true
